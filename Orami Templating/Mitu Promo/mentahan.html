@@ -1,0 +1,457 @@
+<div class="thematic-campaign push _top _x2 padinner5">
+
+  <div class="col-xs-15 col-box">
+    <a class="hidden-sm hidden-xs" href="https://www.orami.co.id/pp/promo-mitu">
+      <img  class="lazy " alt="" data-src="https://img.orami.co.id/media/wysiwyg/static-block-img/Mitu_Banner2.jpg" >
+    </a>
+    <a class="hidden-lg hidden-md" href="https://www.orami.co.id/pp/promo-mitu">
+      <img  class="lazy " alt="" data-src="https://img.orami.co.id/media/wysiwyg/static-block-img/Mitu_Banner2.jpg" >
+    </a>
+
+  </div>
+
+</div>
+
+
+<div class="thematic-campaign push _x2 ">
+
+  <div class="col-xs-15 col-box">
+    <div class="row">
+      <div class="col-xs-15 col-box">
+
+
+        <div class="tab-section tab-promo">
+          <div class="nav-tabs set-equal">
+            <div class="list">
+              <div data-target="#tab1" class="tabAction active" status="tab-menu" >
+                <span>Tentang Promo</span>
+              </div>
+            </div>
+            <div class="list">
+              <div data-target="#tab2" class="tabAction " status="tab-menu" >
+                <span>Syarat & Ketentuan</span>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="tab1" class="tab-pane active in">Beli produk mitu dihalaman ini, menangkan emas dan hadiah lainnya. Syarat dan ketentuan berlaku.
+            </div>
+
+            <div id="tab2" class="tab-pane">
+              <h3><strong>Berikut merupakan mekanisme dari Campaign Gemas Mitu :</strong></h3>
+
+              <br>
+              <ol>
+                <li>Beli Mitu Tisue Basah Ganti Popok (Changing Diaper).</li>
+                <li>Gosok sticker yang tersedia pada kemasan.</li>
+                <li>Temukan hadiah dan kode verifikasi pada sticker tersebut.</li>
+                <li>Masukan data diri dan kode verifikasi tersebut ke <a href="http://www.gebyaremas.mitubabycare.com/">Website Mitu Baby</a></li>
+                <li>Menangkan emas dan pulsa dengan total hadiah ratusan juta rupiah.</li>
+                <li>Info lebih lanjut, silahkan kunjungi : <a href="http://www.gebyaremas.mitubabycare.com/">Website Mitu Baby</a> atau hubungi Mitu Baby Customer Care : 0811-1626-999</li>
+              </ol>
+              <br>
+              <h4>Periode Campaign Gemas Mitu : 1 Februari – 30 April 2018</h4>
+              <h4>Periode Penukaran Hadiah : 1 Februari – 31 Mei 2018</h4>
+              <br>
+              <h3><strong>Total Hadiah :</strong></h3>
+              <br>
+              <ol>
+                <li>1 Emas seberat 100gr.</li>
+                <li>20 Emas seberat 20gr.</li>
+                <li>100 Emas seberat 1gr.</li>
+                <li>17.000 Voucher Pulsa sebesar Rp 25.000,-</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$('.tabAction[status=tab-menu]').click(function(){
+  var getTabName = $(this).data('target');
+  $(getTabName).closest('.tab-content').find('.tab-pane').removeClass('active in');
+  $(this).closest('.nav-tabs').find('.tabAction').removeClass('active');
+  $(this).addClass('active');
+  $(getTabName).addClass('active in');
+});
+
+});
+
+equalheight = function(container){
+
+var currentTallest = 0,
+   currentRowStart = 0,
+   rowDivs = new Array(),
+   $el,
+   topPosition = 0;
+$(container).each(function() {
+ $el = $(this);
+ $($el).height('auto')
+ topPostion = $el.position().top;
+
+ if (currentRowStart != topPostion) {
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+   rowDivs.length = 0; // empty the array
+   currentRowStart = topPostion;
+   currentTallest = $el.height();
+   rowDivs.push($el);
+ } else {
+   rowDivs.push($el);
+   currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+}
+ for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+   rowDivs[currentDiv].height(currentTallest);
+ }
+});
+}
+
+$(window).load(function() {
+equalheight('.set-equal .equal');
+});
+
+$(window).resize(function(){
+equalheight('.set-equal .equal');
+});
+</script>
+
+
+<style>
+
+/*additional bootstrap start*/
+.visible-xs, .visible-sm, .visible-md, .visible-lg, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-print, .visible-print-block, .visible-print-inline, .visible-print-inline-block {
+display: none !important; }
+
+@media (max-width: 767px) {
+.visible-xs {
+display: block !important; }
+
+table.visible-xs {
+display: table !important; }
+
+tr.visible-xs {
+display: table-row !important; }
+
+th.visible-xs, td.visible-xs {
+display: table-cell !important; } }
+@media (max-width: 767px) {
+.visible-xs-block {
+display: block !important; } }
+@media (max-width: 767px) {
+.visible-xs-inline {
+display: inline !important; } }
+@media (max-width: 767px) {
+.visible-xs-inline-block {
+display: inline-block !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+.visible-sm {
+display: block !important; }
+
+table.visible-sm {
+display: table !important; }
+
+tr.visible-sm {
+display: table-row !important; }
+
+th.visible-sm, td.visible-sm {
+display: table-cell !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+.visible-sm-block {
+display: block !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+.visible-sm-inline {
+display: inline !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+.visible-sm-inline-block {
+display: inline-block !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+.visible-md {
+display: block !important; }
+
+table.visible-md {
+display: table !important; }
+
+tr.visible-md {
+display: table-row !important; }
+
+th.visible-md, td.visible-md {
+display: table-cell !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+.visible-md-block {
+display: block !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+.visible-md-inline {
+display: inline !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+.visible-md-inline-block {
+display: inline-block !important; } }
+@media (min-width: 1200px) {
+.visible-lg {
+display: block !important; }
+
+table.visible-lg {
+display: table !important; }
+
+tr.visible-lg {
+display: table-row !important; }
+
+th.visible-lg, td.visible-lg {
+display: table-cell !important; } }
+@media (min-width: 1200px) {
+.visible-lg-block {
+display: block !important; } }
+@media (min-width: 1200px) {
+.visible-lg-inline {
+display: inline !important; } }
+@media (min-width: 1200px) {
+.visible-lg-inline-block {
+display: inline-block !important; } }
+@media (max-width: 767px) {
+.hidden-xs {
+display: none !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+.hidden-sm {
+display: none !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+.hidden-md {
+display: none !important; } }
+@media (min-width: 1200px) {
+.hidden-lg {
+display: none !important; } }
+@media print {
+.visible-print {
+display: block !important; }
+
+table.visible-print {
+display: table !important; }
+
+tr.visible-print {
+display: table-row !important; }
+
+th.visible-print, td.visible-print {
+display: table-cell !important; } }
+@media print {
+.visible-print-block {
+display: block !important; } }
+@media print {
+.visible-print-inline {
+display: inline !important; } }
+@media print {
+.visible-print-inline-block {
+display: inline-block !important; } }
+@media print {
+.hidden-print {
+display: none !important; } }
+@media (max-width: 767px) {
+.hidden-xs {
+display: none !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+.hidden-sm {
+display: none !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+.hidden-md {
+display: none !important; } }
+@media (min-width: 1200px) {
+.hidden-lg {
+display: none !important; } }
+.static_cms img {
+width: 100% !important; }
+
+.push._bottom {
+margin-bottom: 10px; }
+.push._bottom._x2 {
+margin-bottom: 20px; }
+.push._bottom._x3 {
+margin-bottom: 30px; }
+.push._bottom._x5 {
+margin-bottom: 50px; }
+.push._top {
+margin-top: 10px; }
+.push._top._x2 {
+margin-top: 20px; }
+.push._top._x3 {
+margin-top: 30px; }
+.push._top._x5 {
+margin-top: 50px; }
+
+/*additional bootstrap stop*/
+.wrap-body {
+background: #f5f5f1; }
+
+thematic-campaign.pushtop {
+margin-top: 20px; }
+
+.thematic-campaign .row-title {
+margin-bottom: 25px;
+height: 30px;
+font-size: 20px;
+color: #3c3d41;
+font-family: open_sansbold;
+display: inline-block;
+width: 100%;
+position: relative; }
+.thematic-campaign .row-title .line {
+height: 0;
+width: 100%;
+border-bottom: solid 1px #e0e0e0;
+margin-top: -15px; }
+.thematic-campaign .row-title .title {
+margin: 0 auto;
+display: inline-block;
+line-height: 30px;
+background: #f5f5f1;
+padding: 0 50px; }
+.thematic-campaign .shadowbox {
+box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+-moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08); }
+.thematic-campaign.transparent {
+border: none;
+background: transparent !important;
+box-shadow: none; }
+.thematic-campaign.transparent .row.inset {
+margin: 0 -25px; }
+
+.padinner5 {
+padding: 5px; }
+
+.padinner10 {
+padding: 10px; }
+
+.thematic-campaign {
+border: 1px solid #e7e7e7;
+box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+-moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+margin: 0 0 30px 0;
+background: #fff !important;
+width: 100%;
+display: inline-block; }
+.thematic-campaign:last-child {
+margin-bottom: 50px; }
+.thematic-campaign div.col-box {
+padding: 0px !important; }
+.thematic-campaign div.col-box.bordered {
+  border: solid 1px #eee; }
+.thematic-campaign div.col-box img {
+  width: 100%; }
+.thematic-campaign div.col-box .row {
+  margin: initial !important; }
+.thematic-campaign .col-half-15 {
+width: 50%;
+float: left; }
+.thematic-campaign .bg-white {
+background: #fff; }
+.thematic-campaign .row {
+background: transparent !important; }
+
+.col-half-15 {
+width: 50%;
+float: left; }
+
+@media (max-width: 990px) {
+.thematic-campaign .col-half-15.col-xs-15 {
+width: 100% !important; } }
+@media (min-width: 990px) {
+.thematic-campaign .col-half-15.col-xs-15 {
+width: 50% !important; } }
+.side-line .col-box {
+border-right: solid 1px #eeeeee; }
+.side-line:last-child .col-box:last-child {
+border-right: none; }
+@media (max-width: 990px) {
+.side-line .col-box {
+border-right: none; } }
+
+.transparent {
+background-color: transparent; }
+
+.nav-tabs {
+display: table; }
+.nav-tabs .list {
+padding: 0; }
+.nav-tabs .list .tabAction.active {
+  color: #73777a; }
+
+.col-box a {
+display: inline; }
+
+.tab-view {
+display: table;
+width: 100%; }
+.tab-view .tab-cell {
+display: table-cell;
+float: none;
+vertical-align: top;
+background-color: transparent; }
+
+.tab-content {
+padding: 0; }
+.tab-content .tab-pane {
+opacity: 0;
+display: none; }
+.tab-content .tab-pane.active {
+  display: block; }
+.tab-content .tab-pane.active.in {
+  opacity: 1; }
+
+.tab-promo .nav-tabs {
+width: 100%;
+border-bottom: solid 1px #e0e0e0; }
+.tab-promo .nav-tabs .list {
+width: 50%;
+display: table-cell;
+text-align: center;
+vertical-align: bottom; }
+.tab-promo .nav-tabs .list .tabAction {
+  cursor: pointer;
+  padding: 15px 5px 20px;
+  font-size: 20px;
+  line-height: 24px;
+  display: inline-block;
+  font-family: open_sansbold;
+  color: #73777a;
+  position: relative; }
+  @media (max-width: 420px) {
+    .tab-promo .nav-tabs .list .tabAction {
+      min-height: 65px; } }
+  @media (max-width: 768px) {
+    .tab-promo .nav-tabs .list .tabAction {
+      font-size: 14px;
+      line-height: 18px; } }
+  .tab-promo .nav-tabs .list .tabAction.active {
+    color: #3c3d41; }
+    .tab-promo .nav-tabs .list .tabAction.active:after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background-color: #fc9797;
+      position: absolute; }
+.tab-promo .tab-content {
+font-size: 16px;
+line-height: 20px;
+padding: 30px; }
+@media (max-width: 768px) {
+.tab-promo .tab-content {
+  font-size: 14px;
+  line-height: 18px; } }
+.tab-promo .tab-content li {
+font-size: 16px;
+line-height: 20px; }
+
+/*# sourceMappingURL=master.css.map */
+
+
+</style>
