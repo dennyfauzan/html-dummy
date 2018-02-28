@@ -1,0 +1,94 @@
+<div class="row">
+<div class="container reco_gravity">
+<div id="reco_callback_target" class="recItems list-prod-area-vertical product-area">&nbsp;</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+    $(document).ready(function(){
+    pushGravity({
+        type: "recommendation",
+        callback: callback_widget_reco,
+        numberLimit: 10,
+        scenarioId: "MAIN_PAGE",
+        resultNames: ["name", "itemId", "price","image-url","product-url"]
+    });
+    function url_convert_a(url){
+        var stringurl = url.toString();
+        return url.substring(0, 45)+ "cache/1/image/150x/0dc2d03fe217f8c83829496872af24a0/" + url.substring(45);
+    };
+    function callback_widget_reco(result){
+        if(result.items.length > 0){
+            var div = document.getElementById("reco_callback_target");
+            div.setAttribute('class', 'recItems list-prod-area-vertical');
+            var recotitle = document.createElement("div");
+            recotitle.setAttribute('class', 'tag-title padside5 push _bottom _x2');
+            div.appendChild(recotitle);
+            var h3title = document.createElement("h3");
+            h3title.setAttribute('class', 'title _h3');
+            recotitle.appendChild(h3title);
+            h3title.appendChild(document.createTextNode("Produk Populer"));
+            var wraplist = document.createElement("div");
+            wraplist.setAttribute('class', 'list-prod-area-vertical');
+            div.appendChild(wraplist);
+            var found = 0;
+
+            for (var i = 0; i < result.items.length; ++i) {
+                var item = result.items[i];
+                var thumb_url = item["image-url"];
+
+                if (!thumb_url) { continue; }
+
+                if (found > 4) { break; }
+
+                found += 1;
+                var itemDiv = document.createElement("div");
+                itemDiv.setAttribute('class', 'recItem prod-widget-vertical');
+                wraplist.appendChild(itemDiv);
+
+                var wrap_image = document.createElement("div");
+                wrap_image.setAttribute('class','prod-image');
+                itemDiv.appendChild(wrap_image);
+                var img = document.createElement("img");
+                var thumb_url = url_convert_a(item["image-url"]);
+                img.setAttribute('src', thumb_url);
+                wrap_image.appendChild(img);
+
+                var wrap_button = document.createElement("div");
+                wrap_button.setAttribute('class','wrap-widget-button');
+                wrap_image.appendChild(wrap_button);
+                var imgLink = document.createElement("a");
+                imgLink.setAttribute('class','block-link-product config-prod btn btn-ghost btn-block');
+                var prodlink = item["product-url"];
+                imgLink.setAttribute('href', prodlink);
+                imgLink.appendChild(document.createTextNode("Lihat Detil"));
+                imgLink.onmousedown =  function() {
+                    _gravity.push({type:'event', eventType:'REC_CLICK', itemId: item.itemId});
+                };
+                wrap_button.appendChild(imgLink);
+
+                var widget_detail = document.createElement("div");
+                widget_detail.setAttribute('class','wrap-widget-detail');
+                itemDiv.appendChild(widget_detail);
+
+                var titleLink = document.createElement("a");
+                titleLink.setAttribute('href', prodlink);
+                titleLink.onmousedown =  function() {
+                    _gravity.push({type:'event', eventType:'REC_CLICK', itemId: item.itemId});
+                };
+                var textDivtitle = document.createElement("div");
+                textDivtitle.setAttribute('class', 'prod-name');
+                textDivtitle.appendChild(titleLink);
+                titleLink.appendChild(document.createTextNode(item.name));
+                widget_detail.appendChild(textDivtitle);
+
+                var textDivprice = document.createElement("div");
+                var price = Math.round(item.price);
+                var price_id =numberWithCommas(price);
+                textDivprice.setAttribute('class', 'widget-price');
+                textDivprice.appendChild(document.createTextNode("Rp " + price_id));
+                widget_detail.appendChild(textDivprice);
+            }
+         }
+    }
+});
+// ]]></script>
