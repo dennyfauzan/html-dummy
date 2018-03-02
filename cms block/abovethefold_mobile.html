@@ -73,7 +73,7 @@
                         <p class="text is-sm color is-txt is-goblin text-center">Perawatan Bayi &amp; Anak</p>
                     </a>
                 </div>
-                <div class="mb-24">
+                <div class="mb-24 new-category">
                     <a href="/beauty-lounge">
                         <img src="{{media url='wysiwyg/static-block-img/static_banner/BeautyLounge11.png'}}" alt="" />
                         <p class="text is-sm color is-txt is-goblin text-center">Beauty Lounge</p>
@@ -100,4 +100,32 @@
             </div>
         </div>
     </div>
+<style>
+    .new-category {
+        position: relative;
+    }
+
+    .new-category:before {
+        content: "Baru";
+        position: absolute;
+        right: 4px;
+        top: 9px;
+        z-index: 1;
+        color: white;
+        font-size: 11px;
+    }
+
+    .new-category:after {
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: #21b594;
+        content: '';
+        border-radius: 100%;
+        right: 0;
+        top: 0;
+        box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+    }
+</style>
 <!-- end above the fold -->

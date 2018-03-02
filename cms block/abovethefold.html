@@ -73,7 +73,7 @@
                     <p class="text is-md color is-txt is-goblin text-center mt-16">Perawatan Bayi &amp; Anak</p>
                 </a>
             </div>
-            <div class="mb-24">
+            <div class="mb-24 new-category">
                 <a href="/beauty-lounge">
                     <img src="{{media url='wysiwyg/static-block-img/static_banner/BeautyLounge11.png'}}" alt="" />
                     <p class="text is-md color is-txt is-goblin text-center mt-16">Beauty Lounge</p>
@@ -105,4 +105,31 @@
         $(".candy-wrapper,.reco_gravity").parent().css("background-color", "#fff");
     })
 // ]]></script>
+<style>
+    .new-category {
+        position: relative;
+    }
+
+    .new-category:before {
+        content: "Baru";
+        position: absolute;
+        right: 7px;
+        top: 12px;
+        z-index: 1;
+        color: white;
+    }
+
+    .new-category:after {
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        background: #21b594;
+        content: '';
+        border-radius: 100%;
+        right: 0;
+        top: 0;
+        box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+    }
+</style>
 <!-- end above thefold-->
