@@ -2,10 +2,13 @@
     <div class="segment-info">
         <h1 class="mb-16">Selamat Ulang Tahun Yang Pertama</h1>
         <p class="mb-24">Anda berhak mendapatkan paket hadiah ulang tahun dari Orami:</p>
-        <img class="mb-24" src="{{media url="wysiwyg/static-page-img/landing-birth-club/mb.png"}}" alt="" />
-        <button class="oss-button is-large mb-24">Ambil Hadiah Sekarang</button>
-        <h3 class="mb-16">Ketentuan Pengambilan Hadiah</h3>
-        <ol>
+        <img class="mb-24 hidden-xs hidden-sm hidden-md" width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Birth-Club/landing_page.png'}}" alt="" />
+        <img class="mb-24 hidden-lg" width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Birth-Club/landing_page_mobile.png'}}" alt="" />
+        <button class="oss-button is-large hidden-xs mb-24">Ambil Hadiah Sekarang</button>
+        <button class="oss-button is-full hidden-sm hidden-md hidden-lg mb-24">Ambil Hadiah Sekarang</button>
+        <h3 class="mb-16 hidden-xs hidden-sm">Ketentuan Pengambilan Hadiah</h3>
+        <h3 class="is-mobile mb-20 hidden-lg">Ketentuan Pengambilan Hadiah</h3>
+        <ol class="pt-0">
           <li>
             <p>Berlaku untuk setiap pembelian produk 3 x 800gr Bebelac 3 atau 4 ("Produk") secara online hanya di Orami.</p>
           </li>
@@ -20,13 +23,11 @@
 </div>
 
 <style>
-  @media (max-width: 1279px) {
-    .is-large {
-      width: 100%;
-    }
+  .pt-0 {
+    padding-top: 0px !important;
+  }
 
-    h3 {
-      font-size: 19px !important;
-    }
+  .mb-20 {
+    margin-bottom: 20px !important;
   }
 </style>
