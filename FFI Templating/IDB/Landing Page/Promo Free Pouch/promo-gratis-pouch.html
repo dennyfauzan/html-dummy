@@ -1,0 +1,65 @@
+<script>
+    require([
+        'jquery',
+        'jquery/ui'
+    ],
+        function ($, tabs) {
+            $("#staticpage_tabs").tabs();
+        }
+    );
+</script>
+<div class="static-content">
+    <div class="section">
+        <div class="title-section">
+            <h1>
+                Promo Pouch
+            </h1>
+        </div>
+        <img src="{{media url=wysiwyg/static-page-image/Banner0-FF-gratis-pouch.jpg}}" alt="" />
+    </div>
+    <div class="section">
+        <div class="tabs-section" id="staticpage_tabs">
+            <ul>
+                <li>
+                    <a href="#fragment-1">
+                        <span>Tentang Promo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#fragment-2">
+                        <span>Syarat & Ketentuan</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="fragment-1">
+                <p>
+                    Gratis Pouch Frisian Flag jika membeli produk dibawah ini:
+                </p>
+                <p>
+                    - 3 Box 400gr Frisian Flag Jelajah/Karya.
+                </p>
+                <p>
+                    - 1 Box 1200gr Frisian Flag Jelajah/Karya.
+                </p>
+                <p>
+                    - 4 Box x 200gr Frisian Flag Mama.
+                </p>
+            </div>
+            <div id="fragment-2">
+                <p>
+                    1. Promo tidak berlaku kelipatan.
+                </p>
+                <p>
+                    2. Selama persediaan masih ada, customer berhak mendapatkan hadiah.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        {{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="12" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`6, 5`^],`1--2`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`milk_weight`,`operator`:`==`,`value`:`216`^]^]"}}
+
+        {{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="12" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`6, 5`^],`1--2`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`milk_weight`,`operator`:`==`,`value`:`223`^]^]"}}
+
+        {{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="12" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`7`^],`1--2`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`milk_weight`,`operator`:`==`,`value`:`222`^]^]"}}
+    </div>
+</div>
