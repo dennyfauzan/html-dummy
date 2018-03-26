@@ -46,12 +46,42 @@
                 </p>
             </div>
             <div id="fragment-2">
-                <p>
-                    1. Promo tidak berlaku kelipatan.
-                </p>
-                <p>
-                    2. Selama persediaan masih ada, customer berhak mendapatkan hadiah.
-                </p>
+                <div id="disclaimer">
+                    <ol>
+                        <li>
+                            Gratis Pouch Frisian Flag untuk pembelian:
+                        </li>
+                        <ul>
+                            <li>
+                                3 box Frisian Flag Jelajah / Karya ukuran 400gr (berlaku untuk varian rasa apa saja).
+                            </li>
+                            <li>
+                                1 box Frisian Flag Jelajah / Karya ukuran 1200gr (berlaku untuk varian rasa apa saja).
+                            </li>
+                            <li>
+                                4 box Frisian Flag Mama ukuran 200gr (berlaku untuk varian rasa apa saja).
+                            </li>
+                        </ul>
+                        <li>
+                            Promo berlaku untuk 1 alamat email per transaksi, tidak berlaku kelipatan.
+                        </li>
+                        <li>
+                            Setelah memilih produk, pastikan Anda masuk ke halaman <b>lihat dan ubah troli</b> untuk mendapatkan hadiah.
+                        </li>
+                        <li>
+                            Hadiah akan otomatis di masukkan ke dalam halaman troli belanja anda.
+                        </li>
+                        <li>
+                            Promo berlaku selama persediaan masih ada.
+                        </li>
+                        <li>
+                            Pastikan kembali pesanan produk anda sebelum melakukan checkout.
+                        </li>
+                        <li>
+                            IDB shop berhak mengubah syarat dan ketentuan sewaktu-waktu tanpa pemberitahuan terlebih dahulu.
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
@@ -63,3 +93,30 @@
         {{widget type="Magento\CatalogWidget\Block\Product\ProductsList" show_pager="0" products_count="12" template="Magento_CatalogWidget::product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`7`^],`1--2`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`milk_weight`,`operator`:`==`,`value`:`222`^]^]"}}
     </div>
 </div>
+
+<style>
+    #disclaimer ul {
+        padding: 0 0 0 22px;
+        margin: 0 0 1rem 0;
+        list-style-type: disc;
+        border-bottom: inherit;
+    }
+
+    #disclaimer ol {
+        padding: 0 0 0 22px;
+        margin: 0;
+        border-bottom: inherit;
+    }
+
+    #disclaimer ul li {
+        font-size: 19px;
+        text-align: left;
+        display: list-item;
+    }
+
+    #disclaimer ol li {
+        font-size: 19px;
+        text-align: left;
+        display: list-item;
+    }
+</style>
