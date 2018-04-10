@@ -4,22 +4,28 @@
         <h1 class="mb-16">Pojok Susu Kebutuhan Khusus</h1>
         <p class="mb-24">Lorem ipsum dolor sit amet</p>
         <img class="mb-24 hidden-xs hidden-sm hidden-md" width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Alergy-Corner/Pojok_susu_top_banner.png'}}" alt="" />
-        <img class="mb-24 hidden-lg" width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Alergy-Corner/Pojok_susu_top_banner_mobile.png'}}" alt="" />
+        <img class="hidden-lg" width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Alergy-Corner/Pojok_susu_top_banner_mobile.png'}}" alt="" />
     </div>
 
-    <div class="oss-g segment-info ptb-0 mb-48">
+    <div class="oss-g segment-info ptb-0 mb-48 hidden-xs">
         <div class="oss-u-1-2 oss-u-md-1-3 pr-24">
-            <a class="oss-button is-full btn-anchor" href="#">Alergi</a>
+            <a class="oss-button is-full btn-anchor" href="#alergi">Alergi</a>
         </div>
         <div class="oss-u-1-2 oss-u-md-1-3 pr-24">
-            <a class="oss-button is-full btn-anchor" href="#">Kejar Tumbuh</a>
+            <a class="oss-button is-full btn-anchor" href="#tumbuh">Kejar Tumbuh</a>
         </div>
         <div class="oss-u-1-2 oss-u-md-1-3 pr-24">
-            <a class="oss-button is-full btn-anchor" href="#">Saluran Cerna</a>
+            <a class="oss-button is-full btn-anchor" href="#cerna">Saluran Cerna</a>
         </div>
     </div>
 
-    <div class="segment-info ptb-0 hidden-xs">
+    <div class="oss-g segment-info ptb-0 hidden-md hidden-lg hidden-sm">
+        <a class="oss-button is-full mb-16" href="#alergi">Alergi</a>
+        <a class="oss-button is-full mb-16" href="#tumbuh">Kejar Tumbuh</a>
+        <a class="oss-button is-full mb-16" href="#cerna">Saluran Cerna</a>
+    </div>
+
+    <div class="segment-info ptb-0 hidden-xs" id="alergi">
         <div class="oss-g">
             <div class="col oss-u-md-1-2 half-left pt-48">
                 <h3>Alergi</h3>
@@ -31,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="segment-info hidden-md hidden-lg hidden-sm">
+    <div class="segment-info hidden-md hidden-lg hidden-sm" id="alergi">
         <div class="oss-g">
             <h3>Alergi</h3>
             <img class="mb-24" width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Alergy-Corner/Pojok_susu_side_banner_mobile.png'}}" alt="">
@@ -59,7 +65,7 @@
         <div class="wrap-list-product">{{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="15936" template="catalog/product/list.phtml"}}</div>
     </div>
 
-    <div class="segment-info ptb-0 mt-48 hidden-xs">
+    <div class="segment-info ptb-0 mt-48 hidden-xs" id="tumbuh">
         <div class="oss-g">
             <div class="col oss-u-md-1-2 half-left">
                 <img width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Alergy-Corner/Pojok_susu_sidebanner.png'}}" alt="">
@@ -71,7 +77,7 @@
             </div>
         </div>
     </div>
-    <div class="segment-info hidden-md hidden-lg hidden-sm mt-8">
+    <div class="segment-info hidden-md hidden-lg hidden-sm mt-8" id="tumbuh">
         <div class="oss-g">
             <h3>Kejar Tumbuh</h3>
             <img class="mb-24" width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Alergy-Corner/Pojok_susu_side_banner_mobile.png'}}" alt="">
@@ -99,7 +105,7 @@
         <div class="wrap-list-product">{{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="15936" template="catalog/product/list.phtml"}}</div>
     </div>
 
-    <div class="segment-info ptb-0 mt-48 hidden-xs">
+    <div class="segment-info ptb-0 mt-48 hidden-xs" id="cerna">
         <div class="oss-g">
             <div class="col oss-u-md-1-2 half-left pt-48">
                 <h3>Saluran Cerna</h3>
@@ -111,7 +117,7 @@
             </div>
         </div>
     </div>
-    <div class="segment-info hidden-md hidden-lg hidden-sm mt-8">
+    <div class="segment-info hidden-md hidden-lg hidden-sm mt-8" id="cerna">
         <div class="oss-g">
             <h3>Saluran Cerna</h3>
             <img class="mb-24" width="100%" height="auto" src="{{media url='wysiwyg/static-page-img/Alergy-Corner/Pojok_susu_side_banner_mobile.png'}}" alt="">
@@ -141,6 +147,28 @@
 
 </div>
 
+<script type="text/javascript">
+    // handle links with @href started with '#' only
+    $(document).on('click', 'a[href^="#"]', function(e) {
+        // target element id
+        var id = $(this).attr('href');
+
+        // target element
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+
+        // prevent standard hash navigation (avoid blinking in IE)
+        e.preventDefault();
+
+        // top position relative to the document
+        var pos = $id.offset().top;
+
+        // animated top scrolling
+        $('body, html').animate({scrollTop: pos});
+    });
+</script>
 
 <style>
     .ptb-0 {
