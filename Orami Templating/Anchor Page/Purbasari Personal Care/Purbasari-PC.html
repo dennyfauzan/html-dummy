@@ -1,0 +1,98 @@
+<style>
+  .ap-carousel{width: 100%; height: 100%;}
+  .carousel-cell{
+    width: 100%;
+    height: 325px;
+  }
+  /* .ap-carousel .flickity-prev-next-button {display: none;} */
+  .flickity-page-dots{bottom:-60px;}
+  .flickity-page-dots .dot{
+    width: 12px!important;
+    height: 12px!important;
+    margin: 0 15px 0 -5px!important;
+    font-size: 30px!important;
+  }
+  .flickity-page-dots .dot.is-selected{background-color: #42a9f3;}
+  .flickity-prev-next-button{width: 57px; height: 55px;}
+  .flickity-prev-next-button .arrow{fill:#ff6c6c;}
+    @media (max-width: 768px){
+      .carousel-cell{
+        height: 100px;
+      }
+      .flickity-page-dots {
+        bottom: -45px;
+      }
+      .flickity-prev-next-button{display: none;}
+    }
+</style>
+
+{{block type="staticarea/block" id="banner0-purbasari-personal-care"}}
+
+<div class="segment-info mb-24">
+  <div class="oss-g">
+      <div class="ap-carousel">
+        <div class="carousel-cell">
+          <a href="/pp/purbasari-special-promo">
+            <img src="https://cdn.orami.co.id/media/filer_public/3f/1c/3f1c1661-0edf-4e61-8d03-149e310e179f/slider-2432x670.jpg" width="100%">
+          </a>
+        </div>
+        <div class="carousel-cell">
+          <a href="/pp/promo-purbasari">
+            <img src="https://cdn.orami.co.id/media/filer_public/99/52/99529b92-5b0b-4a27-9ca1-19648c6cdc12/slider-2432x670-1.jpg" width="100%">
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="segment-info">
+  <div class="oss-g">
+    <div class="oss-u-12-24 col half-left mb-12">
+      <a href="/bp/purbasari-feminine-hygine">
+        <img width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/4b/34/4b3451a2-eca3-4f36-b261-087eca7b42e3/category-3.jpg">
+      </a>
+    </div>
+
+    <div class="oss-u-12-24 col half-right mb-12">
+      <a href="/bp/purbasari-hair-care">
+        <img width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/86/e5/86e512eb-c3c0-4778-8e3e-0565446c5284/category-4.jpg">
+      </a>
+    </div>
+
+    <div class="oss-u-12-24 col half-left">
+      <a href="/bp/purbasari-body-wash-lotions">
+        <img width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/29/40/2940a780-aa59-4bd2-81fe-a4456061ab6e/category-2.jpg">
+      </a>
+    </div>
+    <div class="oss-u-12-24 col half-right">
+      <a href="/bp/purbasari-body-scrub-exfoliations">
+        <img width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/28/d3/28d36de3-e24c-4967-83fb-69a57283f693/category-1.jpg">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="segment-info">
+  <div class="row-title text-center" style="margin-bottom:0;">
+    <div class="title">
+      <strong>Produk Rekomendasi</strong>
+    </div>
+    <div class="line"></div>
+  </div>
+</div>
+<div class="product-list clearfix margin-vertical">
+  <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/bp/purbasari">
+      <img src="https://cdn.orami.co.id/media/filer_public/1e/8e/1e8e4fb2-b0eb-435d-ab9a-4c8f49afc26d/button-categori-219x345.jpg" alt="" width="100%" height="100%" />
+  </a>
+  <a class="prod-widget-horizontal hidden-md hidden-lg hidden-sm banner-selekapnya" href="/bp/purbasari">
+      <img src="https://cdn.orami.co.id/media/filer_public/bd/40/bd404f6c-22d9-4fe0-9b42-7d33d18a02a0/button-categori-mobile.jpg" alt="" width="100%" height="100%" />
+  </a>
+  <div class="wrap-list-product">{{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="17425" template="catalog/product/list.phtml"}}</div>
+</div>
+
+<script>
+  $('.ap-carousel').flickity({
+    cellAlign: 'left',
+    contain: true
+  })
+</script>
