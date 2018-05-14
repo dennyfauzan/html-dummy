@@ -1,0 +1,253 @@
+<style>
+  .segment-child.border-right-dashed {padding-right: 16px;}
+  .text-left.segment-child{padding-left: 16px;}
+  .border-right-dashed{border-right: 1px dashed #666;}
+  .al-self{align-self: center;}
+  .btm-dashed{border-bottom: 1px dashed #666; height: 48px;}
+  
+  #thumbnails{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .c-thumbnail{
+    width: 24%;
+    border: 1px solid #ececec;
+    display: inline-block;
+    margin: 0 0.5% 1%;
+    float: left;
+  }
+  .c-thumbnail > a{display: block;}
+  .thumb-desc{
+    padding: 17px;
+  }
+  .thumb-desc h6 {
+    color: #3c3d41 !important;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+  }
+  .thumb-desc p {
+    color: #bbb;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .segment-child{
+      text-align: center!important;
+      padding: 0 0 14px 0!important;
+    }
+    .border-right-dashed{
+      border:none;
+    }
+
+    .al-self:first-child{
+      margin-bottom: 25px;
+    }
+    .c-thumbnail{width: 49%;margin: 0 10px 10px 0;}
+    .thumb-desc p {font-size: 14px;}
+    .c-thumbnail:nth-child(2n+0){
+      margin-right: 0px;
+    }
+    .product-container{flex-direction: column;align-items: center;}
+    .product-card{margin-right: 0;}
+  }
+</style>
+
+<div class="segment-info">
+  <div class="padinner5">
+      <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/ba/fa/bafa5b2e-b559-4e36-ab8e-b00eca861aa7/orami-charity-landing-alt-2.jpg" alt="" width="100%" height="auto" />
+      <img class="visible-xs" src="https://cdn.orami.co.id/media/filer_public/ba/fa/bafa5b2e-b559-4e36-ab8e-b00eca861aa7/orami-charity-landing-alt-2.jpg" alt="" width="100%" height="auto" />
+  </div>
+</div>
+
+<div class="oss-g segment-info clearfix margin-vertical mb-24">
+  <div class="oss-u-1-1 float-center">
+    <div class="oss-g">
+      <div class="oss-u-1-1 oss-u-md-17-24 al-self">
+          <h3 class="mb-4">Tentang Athallah Dhia Syahputra</h3>
+          <p class="mb-8">
+            Athallah Dhia Syahputra terlahir dari rahim Ibu yang kuat bernama Lestari Magdalena Yahya dan Ayah yang hebat bernama Ady Agung Syahputra. Pada usia kandungan 5 bulan, sang ibu merasakan ada yang berbeda dengan kehamilannya. Dari hasil USG terlihat bahwa Atha memang spesial, ia tidak memiliki tangan kanan dan tulang paha sebelah kanan lebih pendek dari yang kiri. Dokter menjelaskan bahwa keadaan ini bisa terjadi karena beberapa kemungkinan, salah satunya virus.
+          </p>
+          <p class="mb-8">
+            Dalam ilmu kedokteran keadaan ini juga bisa disebut Meromelia Syndrome yaitu sindrom yang ditandai dengan kurang lengkapnya bagian (tidak semua) dari satu atau lebih anggota badan, bisa tangan atau kaki. Selain itu, Atha juga menderita penyakit lainnya beberapa diantaranya adalah Kista pada Otak sebelah kanan, Laryngomalacia type 1, Tongue Tie, High Palate, serta Hemangioma.
+          </p>
+          <p class="mb-8">
+            Bersama Orami.co.id, mari kita bantu Atha dengan mengunjungi booth yang kami sediakan di <strong>The Forum - Lippo Mall Puri</strong> pada tanggal <strong>Mei 2018</strong> karena 20% dari hasil pendapatan akan kami donasikan untuk Atha.
+          </p>
+          </p>
+      </div>
+      
+      <div class="oss-u-1-1 oss-u-md-7-24 al-self">
+          <img src="https://cdn.orami.co.id/media/filer_public/b3/8b/b38bf4c6-a6ca-4ad9-8135-9490968c3ec7/thumb-1-360x323.png" alt="Athallah Dhia Syahputra">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="segment-info">
+    <div class="row-title text-center" style="margin-bottom:0;">
+      <div class="title">
+        <strong>Artis dan Brand yang berpatisipasi</strong>
+      </div>
+      <div class="line"></div>
+    </div>
+</div>
+
+<div class="product-list clearfix margin-vertical mb-32" id="thumbnails">
+  <!-- Thumbnails Card -->
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>It is a long established fact that a reader will be distracted.</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+  
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+  <div class="c-thumbnail">
+    <a href="#" class="thumbnail-link">
+        <img src="https://cdn.orami.co.id/media/filer_public/32/f0/32f07266-01a6-467f-b8a1-e3958da0d996/thumb-brand-298x298.jpg" alt="thumbnail-img">
+    
+        <div class="thumb-desc p-12">
+          <h6 class="mb-4">Lorem Ipsum</h6>
+          <p>Desc here</p>
+        </div>
+    </a>
+  </div>
+</div>
+
