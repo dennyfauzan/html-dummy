@@ -1,0 +1,104 @@
+<style>
+    .ap-carousel{width: 100%; height: 100%;}
+    .carousel-cell{
+      width: 100%;
+      height: 325px;
+    }
+    /* .ap-carousel .flickity-prev-next-button {display: none;} */
+    .flickity-page-dots{bottom:-60px;}
+    .flickity-page-dots .dot{
+      width: 12px!important;
+      height: 12px!important;
+      margin: 0 15px 0 -5px!important;
+      font-size: 30px!important;
+    }
+    .flickity-page-dots .dot.is-selected{background-color: #42a9f3;}
+    .flickity-prev-next-button{padding: 0;}
+    .flickity-prev-next-button .arrow{fill:#ff6c6c;}
+      @media (max-width: 768px){
+        .carousel-cell{
+          height: 100px;
+        }
+        .flickity-page-dots {
+          bottom: -45px;
+        }
+        .flickity-prev-next-button{display: none;}
+      }
+  </style>
+
+{{block type="staticarea/block" id="banner0-ap-ponds"}}
+
+<div class="segment-info mb-24">
+    <div class="oss-g">
+        <div class="ap-carousel">
+          <div class="carousel-cell">
+            <a href="/pond-s-white-beauty-micellar-water-100ml.html">
+              <img src="https://cdn.orami.co.id/media/filer_public/8a/98/8a9861a2-6c6f-47a4-8c1c-1038bd2c5a66/sis-orami-promo-banner_2432x670px.jpg" width="100%">
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a href="/pond-s-white-beauty-tone-up-milk-40g.html">
+              <img src="https://cdn.orami.co.id/media/filer_public/72/8f/728f6eff-df29-4e82-86c6-6d84b59e747c/sis-orami-brand-banner-perfect-pink_2432x670px-sldr-2.jpg" width="100%">
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+<div class="segment-info">
+  <div class="oss-g">
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-left mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/ponds-anti-aging">
+          <img src="https://cdn.orami.co.id/media/filer_public/9d/74/9d74288a-5419-40cd-936d-d21adf38b736/sis-orami-category-antiaging-_1192x608px.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-right mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/ponds-acne-oil-control">
+          <img src="https://cdn.orami.co.id/media/filer_public/3d/55/3d555a0a-e85f-41aa-9cf0-4ec649c32748/sis-orami-category-acne-oil-control-_1192x608px.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-left mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/ponds-whitening">
+          <img src="https://cdn.orami.co.id/media/filer_public/b0/61/b0610fea-85c0-40ea-8bc6-a6c98ebd809f/sis-orami-category-whitening-rev01_1192x608px.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-right mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/ponds-men">
+          <img src="https://cdn.orami.co.id/media/filer_public/56/ba/56ba90c9-7f42-415d-84ab-9d58dce4d620/sis-orami-category-men-_1192x608px.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="segment-info">
+    <div class="row-title text-center" style="margin-bottom:0;">
+      <div class="title">
+        <strong>Produk Rekomendasi</strong>
+      </div>
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="product-list clearfix margin-vertical">
+    <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/bp/ponds">
+        <img src="https://cdn.orami.co.id/media/filer_public/78/bf/78bfb88b-8710-43c2-b0f9-908d027b034d/button-categori-219x345.jpg" alt="" width="100%" height="100%" />
+    </a>
+    <a class="prod-widget-horizontal hidden-md hidden-lg hidden-sm banner-selekapnya" href="/bp/dove">
+        <img src="https://cdn.orami.co.id/media/filer_public/0a/c7/0ac741b1-2528-4bcd-a311-3d8f19da942f/button-categori-mobile.jpg" alt="" width="100%" height="100%" />
+    </a>
+    <div class="wrap-list-product">{{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="17482" template="catalog/product/list.phtml"}}</div>
+  </div>
+
+  <script>
+      $('.ap-carousel').flickity({
+        cellAlign: 'left',
+        contain: true
+      })
+    </script>
