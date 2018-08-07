@@ -1,0 +1,418 @@
+<style type="text/css">
+  .hero-desktop{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  section .row{
+    padding: 0 4px;
+  }
+  section .row .col{
+    padding: 10px;
+  }
+
+  .zopim{
+    display: none !important;
+  }
+
+  .bg-orange {
+    position: relative;
+    overflow: hidden;
+    min-height: 285px;
+    padding: 0 15px;
+    background-image: linear-gradient(to top, #7fd7f7, #ffffff 9%, #e9d05c);
+  }
+  .bg-orange.purple {
+    background-image: linear-gradient(to top, #895794, #ffffff 9%, #e9d05c);
+  }
+  .bg-banner-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    display: table;
+    background-image: url("{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/bg-banner-footer.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+  .bg-banner-footer.purple{
+    background-image: url("{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/bg-banner-footer-purple.png");
+  }
+
+  .featured-product .bg-orange{
+    margin: 10px;
+  }
+  .featured-product .row .col{
+    padding: 0;
+  }
+  .featured-product .row .col.content{
+    font-size: 16px;
+    line-height: 150%;
+    color: #164198;
+    padding: 60px 50px;
+    text-align: center;
+  }
+  .featured-product .row .col.content .title{
+    font-size: 24px;
+    font-family: 'open_sansbold';
+    color: #164198;
+    margin-bottom: 20px;
+    text-transform: none;
+  }
+  .featured-product .row .col.content p{
+    font-size: 16px;
+  }
+  body.mobile .featured-product .btn.btn-primary,
+  .featured-product .btn.btn-primary{
+    background-color: #20368c;
+    border-color: #20368c;
+    width: 190px;
+  }
+  body.mobile .featured-product .btn.btn-primary:hover,
+  .featured-product .btn.btn-primary:hover{
+    background-color: #a47039;
+    border-color: #a47039;
+  }
+  body.mobile .featured-product .btn.btn-primary .fa,
+  .featured-product .btn.btn-primary .fa{
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-weight: bold;
+  }
+
+  .parent {
+    position: relative;
+    min-height: 300px;
+    text-align: center;
+  }
+  .child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .col-md-empat{
+    width: 25%;
+    padding: 0;
+  }
+
+  #steps-banner .row{
+    margin-left: -19px;
+    margin-right: -19px;
+  }
+
+  .video-wrapper{
+    width: 100%;
+    display: table;
+    padding: 10px;
+  }
+  .video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+  }
+  .video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .btn-video-enfa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 570px) {
+  }
+
+  @media only screen and (max-width: 992px) {
+  }
+
+  @media only screen and (max-width: 1215px) {
+    .featured-product .row .col.content{
+      line-height: 180%;
+      padding: 50px 15px;
+    }
+    .parent{
+      min-height: 304px;
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    .hero-desktop{
+      padding-left: 6px;
+      padding-right: 6px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+    section .row{
+      padding: 0;
+    }
+    section .row .col{
+      padding: 5px;
+    }
+    .bg-orange{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .featured-product .bg-orange {
+        margin: 5px;
+    }
+    .featured-product .row .col{
+      padding: 10px;
+    }
+    .featured-product .row .col.content{
+      line-height: 180%;
+      padding: 0 15px;
+    }
+    .parent{
+      min-height: auto;
+    }
+    .child{
+      width: 100%;
+      position: static;
+      transform: translate(0%, 0%)
+    }
+    body.mobile .featured-product .btn.btn-primary,
+    .featured-product .btn.btn-primary{
+      display: block;
+      margin: 0 auto;
+    }
+    .col-md-empat{
+      width: 100%;
+    }
+    .bg-black{
+      display: none;
+    }
+    .video-wrapper{
+      width: 100%;
+      display: table;
+      padding: 0;
+    }
+    .btn-video-enfa{
+      padding: 5px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .hero-desktop{
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    section .row{
+      padding: 0 4px;
+    }
+    section .row .col{
+      padding: 10px;
+    }
+    .bg-orange{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .featured-product .bg-orange {
+        margin: 10px;
+    }
+    .featured-product .row .col{
+      padding: 0;
+    }
+    .featured-product .row .col.content{
+      padding: 40px 15px;
+    }
+    .parent{
+      min-height: 285px;
+    }
+    .child{
+      width: auto;
+      position: absolute;
+      transform: translate(-50%, -50%)
+    }
+    body.mobile .featured-product .btn.btn-primary,
+    .featured-product .btn.btn-primary{
+      display: block;
+      margin: 0 auto;
+    }
+    .col-md-empat{
+      width: 25%;
+    }
+    .bg-black{
+      display: block;
+    }
+    .video-wrapper{
+      width: 100%;
+      display: table;
+      padding: 10px;
+    }
+    .btn-video-enfa{
+      padding: 10px;
+    }
+  }
+  @media only screen and (min-width: 1216px) {
+    .bg-orange{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .featured-product .row .col.content{
+      padding: 50px 40px;
+    }
+    .parent{
+      min-height: 300px;
+    }
+    .child{
+      position: absolute;
+      transform: translate(-50%, -50%)
+    }
+    body.mobile .featured-product .btn.btn-primary,
+    .featured-product .btn.btn-primary{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+
+
+
+<div class="container">
+
+  <header>
+      <div class="row">
+        <div class="hero-desktop col-xs-15">
+          <a href="https://www.orami.co.id/bp/enfa" target="_blank" title=""><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/hero-02-22agust17.jpg"></a>
+        </div>
+      </div>
+  </header>
+
+
+  <section id="small-banner">
+    <div class="row">
+      <div class="col col-xs-15 col-md-5"><a href="https://www.orami.co.id/enfagrow-a-3-vanilla-800gr-tub.html" target="_blank"><img class="test1" width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/banner-01.jpg"></a></div>
+      <div class="col col-xs-15 col-md-5"><a href="https://www.orami.co.id/enfagrow-a-3-vanilla-800gr-tub.html" target="_blank"><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/banner-02-rev.jpg"></a></div>
+      <div class="col col-xs-15 col-md-5 parent">
+        <img class="bg-black" width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/bg-black.png">
+        <div class="video-wrapper child">
+          <div class="video-container"><iframe class="video-enfa" width="560" height="315" src="https://www.youtube.com/embed/UouAgR9L8uc?rel=0" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        <img class="btn-video-enfa" width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/banner-03.jpg">
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.btn-video-enfa').on('click', function(e) {
+          $(this).fadeOut();
+          $(".video-enfa")[0].src += "&autoplay=1";
+          e.preventDefault();
+        });
+      });
+    </script>
+  </section>
+
+
+  <section id="steps-banner">
+    <div class="row">
+      <div class="col col-xs-15 col-md-empat"><a href="https://www.orami.co.id/bp/enfamama" target="_blank"><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/step-01.jpg"></a></div>
+      <div class="col col-xs-15 col-md-empat"><a href="https://www.orami.co.id/bp/enfagrow-a-3" target="_blank"><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/step-02.jpg"></a></div>
+      <div class="col col-xs-15 col-md-empat"><a href="https://www.orami.co.id/bp/enfagrow-a-4" target="_blank"><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/step-03.jpg"></a></div>
+      <div class="col col-xs-15 col-md-empat"><a href="https://www.orami.co.id/bp/a-gentle-care" target="_blank"><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/step-04.jpg"></a></div>
+    </div>
+  </section>
+
+
+  <section class="featured-product">
+    <div class="row">
+      <div class="bg-orange">
+        <div class="col content col-xs-15 col-md-5">
+          <h2 class="title">Enfamama A+</h2>
+          <p>Susu yang diformulasikan khusus bagi ibu hamil dan menyusui untuk membantu pertumbuhan dan perkembangan otak si kecil dari janin.</p>
+        </div>
+        <div class="col col-xs-15 col-md-5 parent">
+          <img class="child" width="auto" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/enfamama.png">
+        </div>
+        <div class="col col-xs-15 col-md-5 parent">
+          <a href="https://www.orami.co.id/bp/enfamama" target="_blank" class="child btn btn-primary">LIHAT PRODUK <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="bg-banner-footer"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="featured-product">
+    <div class="row">
+      <div class="bg-orange">
+        <div class="col content col-xs-15 col-md-5">
+          <h2 class="title">Enfagrow A+ 3</h2>
+          <p>Susu pertumbuhan anak usia 1-3 tahun untuk bantu optimalkan 4 area kecerdasan: Intelektual, Motorik, Emosional, dan Komunikasi.</p>
+        </div>
+        <div class="col col-xs-15 col-md-5 parent">
+          <img class="child" width="auto" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/enfagrow-3.png">
+        </div>
+        <div class="col col-xs-15 col-md-5 parent">
+          <a href="https://www.orami.co.id/bp/enfagrow-a-3" target="_blank" class="child btn btn-primary">LIHAT PRODUK <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="bg-banner-footer"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="featured-product">
+    <div class="row">
+      <div class="bg-orange">
+        <div class="col content col-xs-15 col-md-5">
+          <h2 class="title">Enfagrow A+ 4</h2>
+          <p>Diformulasikan untuk anak usia 3-12 dengan kandungan nutrisi yang tepat untuk bantu optimalkan cerdasnya si kecil.</p>
+        </div>
+        <div class="col col-xs-15 col-md-5 parent">
+          <img class="child" width="auto" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/enfagrow-4.png">
+        </div>
+        <div class="col col-xs-15 col-md-5 parent">
+          <a href="https://www.orami.co.id/bp/enfagrow-a-4" target="_blank" class="child btn btn-primary">LIHAT PRODUK <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="bg-banner-footer"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="featured-product">
+    <div class="row">
+      <div class="bg-orange purple">
+        <div class="col content col-xs-15 col-md-5">
+          <h2 class="title">Enfagrow A+ Gentle Care</h2>
+          <p>Dengan protein halus mudah dicerna untuk perut si kecil yang peka, karena tidak semua masalah pencernaan berkaitan dengan alergi.</p>
+        </div>
+        <div class="col col-xs-15 col-md-5 parent">
+          <img class="child" width="auto" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/enfagrow-gentle-care.png">
+        </div>
+        <div class="col col-xs-15 col-md-5 parent">
+          <a href="https://www.orami.co.id/bp/a-gentle-care" target="_blank" class="child btn btn-primary">LIHAT PRODUK <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="bg-banner-footer purple"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer-banner">
+    <div class="row">
+      <div class="col col-xs-15">
+        <a href="http://www.enfa.co.id" target="_blank"><img class="banner-desktop" width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/enfagrow/banner-footer.png"></a>
+      </div>
+    </div>
+  </section>
+
+
+</div>
