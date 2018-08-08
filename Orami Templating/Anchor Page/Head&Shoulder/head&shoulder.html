@@ -1,9 +1,14 @@
-{{block type="staticarea/block" id="banner0-ap-citra"}}
+<div class="segment-info">
+  <div class="box-campaign padinner5">
+      <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/67/44/6744390a-6b95-4919-9a66-7934e4184740/orami_sis_hs_brand_banner_2432x608.jpg" alt="" width="100%" height="auto" />
+      <img class="visible-xs" src="https://cdn.orami.co.id/media/filer_public/67/44/6744390a-6b95-4919-9a66-7934e4184740/orami_sis_hs_brand_banner_2432x608.jpg" alt="" width="100%" height="auto" />
+  </div>
+</div>
 
 <div class="segment-info">
-  <a href="/bp/citra-promo-banner">
-    <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/15/58/15580ad7-4e7b-4702-a7e2-3b37d420f21a/citra-orami-2-promobanner.jpg" alt="" width="100%" height="auto">
-    <img class="visible-xs" src="https://cdn.orami.co.id/media/filer_public/15/58/15580ad7-4e7b-4702-a7e2-3b37d420f21a/citra-orami-2-promobanner.jpg" alt="" width="100%" height="auto">
+  <a href="/pp/promo-spesial-head-shoulders">
+    <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/9c/a8/9ca890de-ed25-42da-a49e-c79c8defab2f/orami_sis_hs_promo_banner_slider_2432x670.jpg" alt="" width="100%" height="auto">
+    <img class="visible-xs" src="https://cdn.orami.co.id/media/filer_public/9c/a8/9ca890de-ed25-42da-a49e-c79c8defab2f/orami_sis_hs_promo_banner_slider_2432x670.jpg" alt="" width="100%" height="auto">
   </a>
 </div>
 
@@ -11,29 +16,15 @@
   <div class="oss-g">
     <div class="oss-u-1-1 oss-u-md-1-2 col half-left mb-16">
       <div class="box-campaign padinner5">
-        <a href="/bp/citra-body-lotion">
-          <img src="https://cdn.orami.co.id/media/filer_public/4f/ea/4feac147-886b-4f00-b207-ca4d72a43236/citra-orami-3-category1.jpg" alt="">
+        <a href="/pp/head-shoulders-perawatan-rambut-ketombe-gatal">
+          <img src="https://cdn.orami.co.id/media/filer_public/3f/53/3f536957-7285-49f5-a4a1-7285d6f15e4d/orami_sis_hs_category_banner1_1192x608.jpg" alt="">
         </a>
       </div>
     </div>
     <div class="oss-u-1-1 oss-u-md-1-2 col half-right mb-16">
       <div class="box-campaign padinner5">
-        <a href="/bp/citra-body-wash">
-          <img src="https://cdn.orami.co.id/media/filer_public/5d/30/5d30edb6-9957-4ae3-8aa6-2beb9a7656d5/citra-orami-4-category2.jpg" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="oss-u-1-1 oss-u-md-1-2 col half-left mb-16">
-      <div class="box-campaign padinner5">
-        <a href="/bp/citra-face-care">
-          <img src="https://cdn.orami.co.id/media/filer_public/f2/15/f2159313-e0a8-4581-9197-8b597d61c131/citra-orami-6-category4.jpg" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="oss-u-1-1 oss-u-md-1-2 col half-right mb-16">
-      <div class="box-campaign padinner5">
-        <a href="/bp/citra-best-seller">
-          <img src="https://cdn.orami.co.id/media/filer_public/fd/d9/fdd91b5f-bd90-4f1b-936e-4b6d201084a8/citra-orami-5-category3.jpg" alt="">
+        <a href="/pp/promo-bundle-head-shoulders">
+          <img src="https://cdn.orami.co.id/media/filer_public/46/2d/462db537-f69e-403e-a0e8-8be927104e68/orami_sis_hs_category_banner2_1192x608.jpg" alt="">
         </a>
       </div>
     </div>
@@ -54,12 +45,49 @@
       <img src="https://img.orami.co.id/media/wysiwyg/static-page-img/ap/home-electronics/BUTTON-CATEGORI-MOBILE.jpg" alt="" width="100%" height="100%" />
   </a>
   <!--end mobile-->
+
   <!--banner desktop-->
-  <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/bp/citra">
+  <!-- <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/bp/citra">
       <img src="https://img.orami.co.id/media/wysiwyg/static-page-img/ap/home-electronics/BUTTON-CATEGORI-219x345.jpg" alt="" width="100%" height="100%" />
+  </a> -->
+  <a href="/bp/head-shoulders" class="prod-widget-vertical hidden-xs c-selengkapnya">
+      <span class="selengkapnya">SELENGKAPNYA</span>
+      <span class="btn-see-more">LIHAT SEMUA PRODUK <i class="icon-right-arrow"></i></span>
   </a>
   <!--end desktop-->
   <div class="wrap-list-product">
-      {{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="17774" template="catalog/product/list.phtml"}}
+      {{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="17789" template="catalog/product/list.phtml"}}
   </div>
 </div>
+
+<style>
+  .c-selengkapnya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6C6C;
+    position: relative;
+  }
+  .selengkapnya {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f7f7f7;
+    margin-bottom: 20px;
+    letter-spacing: .8px;
+  }
+  .btn-see-more {
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #FF6C6C;
+    font-size: 12px;
+    box-shadow: 0 2px 2px 0 rgba(228, 57, 57, 0.14), 0 3px 1px -2px rgba(162, 9, 9, 0.12), 0 1px 5px 0 rgba(115, 1, 1, 0.2);
+    font-weight: 700;
+    padding: 10px 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+  }
+
+</style>
