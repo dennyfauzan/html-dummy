@@ -1,0 +1,107 @@
+<div class="segment-info">
+  <div class="box-campaign padinner5">
+      <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/7a/6a/7a6ad7f7-311c-487d-8c31-0564eb065b0c/main-banner.jpg" alt="" width="100%" height="auto" />
+      <img class="visible-xs" src="https://cdn.orami.co.id/media/filer_public/7a/6a/7a6ad7f7-311c-487d-8c31-0564eb065b0c/main-banner.jpg" alt="" width="100%" height="auto" />
+  </div>
+</div>
+
+<div class="segment-info">
+  <a href="#">
+    <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/fa/d3/fad3a43a-879b-4cd9-bfcb-582ccd16fe1d/promo-banner.jpg" alt="" width="100%" height="auto">
+    <img class="visible-xs" src="https://cdn.orami.co.id/media/filer_public/fa/d3/fad3a43a-879b-4cd9-bfcb-582ccd16fe1d/promo-banner.jpg" alt="" width="100%" height="auto">
+  </a>
+</div>
+
+<div class="segment-info mb-24">
+  <div class="oss-g">
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-left mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/lux-melembutkan">
+          <img src="https://cdn.orami.co.id/media/filer_public/20/cb/20cbc3f0-e2aa-4403-84ff-1903bc8084fa/category_1.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-right mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/lux-mencerahkan">
+          <img src="https://cdn.orami.co.id/media/filer_public/f3/dc/f3dca25e-9962-49dc-be53-ab77cad3f450/category_2.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-left mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/lux-menyegarkan">
+          <img src="https://cdn.orami.co.id/media/filer_public/12/f1/12f1f02b-4a50-4269-8731-82d23d6b6a8a/category_3.jpeg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-right mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/lux-harum-tahan-lama">
+          <img src="https://cdn.orami.co.id/media/filer_public/50/3b/503b6503-4906-44ac-8075-1eb639227a3b/category_4.jpeg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="segment-info">
+  <div class="row-title text-center" style="margin-bottom:0;">
+    <div class="title">
+      <strong>Produk Rekomendasi</strong>
+    </div>
+    <div class="line"></div>
+  </div>
+</div>
+<div class="product-list clearfix mb-32">
+  <!--banner mobile-->
+  <a class="prod-widget-horizontal visible-xs banner-selekapnya" href="/bp/citra">
+      <img src="https://img.orami.co.id/media/wysiwyg/static-page-img/ap/home-electronics/BUTTON-CATEGORI-MOBILE.jpg" alt="" width="100%" height="100%" />
+  </a>
+  <!--end mobile-->
+
+  <!--banner desktop-->
+  <!-- <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/bp/citra">
+      <img src="https://img.orami.co.id/media/wysiwyg/static-page-img/ap/home-electronics/BUTTON-CATEGORI-219x345.jpg" alt="" width="100%" height="100%" />
+  </a> -->
+  <a href="/bp/head-shoulders" class="prod-widget-vertical hidden-xs c-selengkapnya">
+      <span class="selengkapnya">SELENGKAPNYA</span>
+      <span class="btn-see-more">LIHAT SEMUA PRODUK <i class="icon-right-arrow"></i></span>
+  </a>
+  <!--end desktop-->
+  <div class="wrap-list-product">
+      {{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="17809" template="catalog/product/list.phtml"}}
+  </div>
+</div>
+
+<style>
+  .c-selengkapnya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6C6C;
+    position: relative;
+  }
+  .selengkapnya {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f7f7f7;
+    margin-bottom: 20px;
+    letter-spacing: .8px;
+  }
+  .btn-see-more {
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #FF6C6C;
+    font-size: 12px;
+    box-shadow: 0 2px 2px 0 rgba(228, 57, 57, 0.14), 0 3px 1px -2px rgba(162, 9, 9, 0.12), 0 1px 5px 0 rgba(115, 1, 1, 0.2);
+    font-weight: 700;
+    padding: 10px 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+  }
+
+</style>
