@@ -35,8 +35,12 @@
   </a>
   <!--end mobile-->
   <!--banner desktop-->
-  <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/pp/promo-spesial-aksesoris-kamar-mandi">
+  <!-- <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/pp/promo-spesial-aksesoris-kamar-mandi">
       <img src="https://img.orami.co.id/media/wysiwyg/static-page-img/ap/home-electronics/BUTTON-CATEGORI-219x345.jpg" alt="" width="100%" height="100%" />
+  </a> -->
+  <a href="/pp/promo-spesial-aksesoris-kamar-mandi" class="prod-widget-vertical hidden-xs c-selengkapnya">
+    <span class="selengkapnya">SELENGKAPNYA</span>
+    <span class="btn-see-more">LIHAT SEMUA PRODUK <i class="icon-right-arrow"></i></span>
   </a>
   <!--end desktop-->
   <div class="wrap-list-product">
@@ -63,8 +67,12 @@
       {{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="17734" template="catalog/product/list.phtml"}}
   </div>
   <!--banner desktop-->
-  <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/pp/promo-spesial-kaca">
+  <!-- <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="/pp/promo-spesial-kaca">
     <img src="https://img.orami.co.id/media/wysiwyg/static-page-img/ap/home-electronics/BUTTON-CATEGORI-219x345.jpg" alt="" width="100%" height="100%" />
+  </a> -->
+  <a href="/pp/promo-spesial-kaca" class="prod-widget-vertical hidden-xs c-selengkapnya">
+    <span class="selengkapnya">SELENGKAPNYA</span>
+    <span class="btn-see-more">LIHAT SEMUA PRODUK <i class="icon-right-arrow"></i></span>
   </a>
   <!--end desktop-->
 </div>
@@ -85,14 +93,50 @@
   </a>
   <!--end mobile-->
   <!--banner desktop-->
-  <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="c/handuk">
+  <!-- <a class="prod-widget-vertical hidden-xs banner-selekapnya" href="c/handuk">
     <img src="https://img.orami.co.id/media/wysiwyg/static-page-img/ap/home-electronics/BUTTON-CATEGORI-219x345.jpg" alt="" width="100%" height="100%" />
+  </a> -->
+  <a href="c/handuk" class="prod-widget-vertical hidden-xs c-selengkapnya">
+    <span class="selengkapnya">SELENGKAPNYA</span>
+    <span class="btn-see-more">LIHAT SEMUA PRODUK <i class="icon-right-arrow"></i></span>
   </a>
   <!--end desktop-->
   <div class="wrap-list-product">
       {{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="17735" template="catalog/product/list.phtml"}}
   </div>
 </div>
+
+<style>
+  .c-selengkapnya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6C6C;
+    position: relative;
+  }
+  .selengkapnya {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f7f7f7;
+    margin-bottom: 20px;
+    letter-spacing: .8px;
+  }
+  .btn-see-more {
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #FF6C6C;
+    font-size: 12px;
+    box-shadow: 0 2px 2px 0 rgba(228, 57, 57, 0.14), 0 3px 1px -2px rgba(162, 9, 9, 0.12), 0 1px 5px 0 rgba(115, 1, 1, 0.2);
+    font-weight: 700;
+    padding: 10px 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+  }
+
+</style>
 
 <script>
   $('.oss-button.is-md').on('click', function(e) {
