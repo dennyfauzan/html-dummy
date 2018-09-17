@@ -1,0 +1,732 @@
+<style type="text/css">
+
+  .link-page-information{
+    display: none;
+  }
+
+  .is-default-typhography a:link,
+  .is-default-typhography a:visited,
+  .content a,
+  .content a:visited{
+    color: #fff;
+  }
+
+
+
+  @media only screen and (max-width: 991px) {
+    .wrap-content .col-xs-15{
+      padding: 0;
+    }
+    .container{
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    body.mobile .static-page-area .row{
+      margin: 0;
+    }
+
+    body.mobile .static-page-area ul, body.mobile .static-page-area ol{
+      padding: 0;
+    }
+    body.mobile .static-page-area ul li, body.mobile .static-page-area ol li{
+      margin: 0;
+    }
+
+    .section-title .txt2{
+      display: block;
+    }
+    .section-title .separator{
+      display: none !important;
+    }
+
+  }
+
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-top: -24px;
+  }
+
+  .hero-desktop{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  img.is-mobile{
+    display: none;
+  }
+  @media only screen and (max-width: 991px) {
+    img.is-mobile{
+      display: block;
+    }
+    img.is-desktop{
+      display: none;
+    }
+  }
+
+  .menu{
+
+  }
+
+
+  .menu .wrapper{
+    overflow: hidden;
+    width: 100%;
+    background-color: #49bbef;
+    height: auto;
+    text-align: center;
+  }
+  .menu .wrapper ul{
+    text-align: center;
+  }
+  .menu .wrapper ul li{
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .menu .wrapper ul li a{
+    display: inline-block;
+    line-height: 26px;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #fff;
+  }
+  .menu .wrapper ul li a:hover{
+    background-color: #3ea3d5;
+  }
+  @media only screen and (max-width: 540px) {
+    .menu .wrapper ul li a{
+      padding: 10px;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .menu .wrapper ul li a{
+      padding: 10px 5px;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .menu .wrapper ul li a{
+      padding: 10px 3px;
+    }
+  }
+
+  section .row{
+    padding: 0 10px;
+  }
+  section .row .col{
+    padding: 10px;
+  }
+
+  .zopim{
+    display: none !important;
+  }
+
+  .bg-orange {
+    position: relative;
+    overflow: hidden;
+    min-height: 285px;
+    padding: 0 15px;
+    background-image: linear-gradient(to top, #7fd7f7, #ffffff 9%, #e9d05c);
+  }
+  .bg-orange.purple {
+    background-image: linear-gradient(to top, #895794, #ffffff 9%, #e9d05c);
+  }
+  .bg-banner-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    display: table;
+    background-image: url("img-enfagrow/bg-banner-footer.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+  .bg-banner-footer.purple{
+    background-image: url("img-enfagrow/bg-banner-footer-purple.png");
+  }
+
+  .featured-product .bg-orange{
+    margin: 10px;
+  }
+  .featured-product .row .col{
+    padding: 0;
+  }
+  .featured-product .row .col.content{
+    font-size: 16px;
+    line-height: 150%;
+    color: #164198;
+    padding: 60px 50px;
+    text-align: center;
+  }
+  .featured-product .row .col.content .title{
+    font-size: 24px;
+    font-family: 'open_sansbold';
+    color: #164198;
+    margin-bottom: 20px;
+  }
+  .featured-product .row .col.content p{
+    font-size: 16px;
+  }
+
+  .featured-product .btn.btn-primary{
+    background-color: #20368c;
+    border-color: #20368c;
+    width: 190px;
+  }
+  .featured-product .btn.btn-primary:hover{
+    background-color: #a47039;
+    border-color: #a47039;
+  }
+  .featured-product .btn.btn-primary .fa{
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-weight: bold;
+  }
+
+  .parent {
+    position: relative;
+    min-height: 300px;
+    text-align: center;
+  }
+  .child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .col-md-empat{
+    width: 25%;
+    padding: 0;
+  }
+  .col-md-dua{
+    width: 50%;
+  }
+
+  #steps-banner .row{
+    margin-left: -19px;
+    margin-right: -19px;
+  }
+
+
+  .video-wrapper{
+    width: 100%;
+    display: table;
+    padding: 10px;
+  }
+  .video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+  }
+  .video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .btn-video-enfa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .bg-blue{
+    background-image: linear-gradient(to left, #1c8bbe, #0051a3);
+  }
+
+  @media only screen and (max-width: 570px) {
+  }
+
+  @media only screen and (max-width: 992px) {
+  }
+
+  @media only screen and (max-width: 1215px) {
+    .featured-product .row .col.content{
+      line-height: 180%;
+      padding: 50px 15px;
+    }
+    .parent{
+      min-height: 304px;
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    .hero-desktop{
+      padding-left: 11px;
+      padding-right: 11px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+    section .row{
+      padding: 0 5px;
+    }
+    section .row .col{
+      padding: 5px;
+    }
+    .bg-orange{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .featured-product .bg-orange {
+        margin: 5px;
+    }
+    .featured-product .row .col{
+      padding: 10px;
+    }
+    .featured-product .row .col.content{
+      line-height: 180%;
+      padding: 0 15px;
+    }
+    .parent{
+      min-height: auto;
+    }
+    .child{
+      width: 100%;
+      position: static;
+      transform: translate(0%, 0%)
+    }
+    .featured-product .btn.btn-primary{
+      display: block;
+      margin: 0 auto;
+    }
+    .col-md-empat{
+      width: 100%;
+      padding: 0;
+    }
+    .bg-black{
+      display: none;
+    }
+    .video-wrapper{
+      width: 100%;
+      display: table;
+      padding: 0;
+    }
+    .btn-video-enfa{
+      padding: 5px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .hero-desktop{
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    section .row{
+      padding: 0 10px;
+    }
+    section .row .col{
+      padding: 10px;
+    }
+    .bg-orange{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .featured-product .bg-orange {
+        margin: 10px;
+    }
+    .featured-product .row .col{
+      padding: 0;
+    }
+    .featured-product .row .col.content{
+      padding: 40px 15px;
+    }
+    .parent{
+      min-height: 285px;
+    }
+    .child{
+      width: auto;
+      position: absolute;
+      transform: translate(-50%, -50%)
+    }
+    .featured-product .btn.btn-primary{
+      display: block;
+      margin: 0 auto;
+    }
+    .col-md-empat{
+      width: 25%;
+      padding: 0;
+    }
+  }
+  @media only screen and (max-width: 1216px) {
+    .langganan .illustration{
+      width: 100%;
+      height: auto;
+    }
+    .langganan .align-center{
+      height: 465px !important;
+    }
+  }
+
+  .col.half{
+    width: 50%;
+  }
+  @media only screen and (max-width: 991px) {
+    .col.half{
+      width: 100%;
+    }
+
+    .langganan .align-center{
+      height: auto !important;
+      margin-bottom: 48px;
+    }
+
+  }
+</style>
+
+
+<div class="bg-blue">
+
+<div class="container">
+
+  <header style="margin: 8px auto;">
+      <div class="row">
+        <div class="col-xs-15">
+          <a href="https://www.orami.co.id/XXXXXXXXX" title=""><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/frisianflag/header.png"></a>
+        </div>
+      </div>
+  </header>
+
+</div>
+
+
+
+<nav>
+    <div class="row" style="margin: 0;">
+      <div class="menu">
+        <div class="wrapper">
+          <ul>
+            <li><a href="https://www.orami.co.id/bp/frisian-flag-mama">MAMA</a></li>
+            <li><a href="https://www.orami.co.id/bp/frisian-flag-awal">AWAL</a></li>
+            <li><a href="https://www.orami.co.id/bp/frisian-flag-langkah">LANGKAH</a></li>
+            <li><a href="https://www.orami.co.id/bp/frisian-flag-jelajah">JELAJAH</a></li>
+            <li><a href="https://www.orami.co.id/bp/frisian-flag-karya">KARYA</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+
+
+
+<div class="container">
+
+  <header>
+      <div class="row">
+        <div class="hero-desktop col-xs-15">
+          <a href="https://www.orami.co.id/XXXXXXXXX" title="">
+            <img class="is-desktop" width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/af/3f/af3f1fca-483c-4cf2-9e95-4fe455a39d25/hero_banner.png">
+            <img class="is-mobile" width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/fb/eb/fbeb82e6-47a2-4374-affb-e5df91000ba5/banner_mobile.png">
+          </a>
+        </div>
+      </div>
+  </header>
+
+
+
+  <section style="margin-top: 48px;">
+    <div class="row">
+      <div class="col col-xs-15 col-md-5"><a href="https://www.orami.co.id/bp/frisian-flag-jelajah"><img width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/e2/8e/e28e2ddb-dcdf-4071-8e7b-4b32367ce6a2/jelajah.png"></a></div>
+      <div class="col col-xs-15 col-md-5"><a href="https://www.orami.co.id/bp/frisian-flag-karya"><img width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/2d/ee/2deeb504-5cf7-47b3-b2cf-8056147945a8/karya.png"></a></div>
+      <div class="col col-xs-15 col-md-5"><a href="https://www.orami.co.id/bp/frisian-flag-mama"><img width="100%" height="auto" src="https://cdn.orami.co.id/media/filer_public/df/72/df7285da-3e66-4c2d-a38e-9c0842b6742f/mama.png"></a></div>
+    </div>
+  </section>
+
+
+  <style type="text/css">
+    .langganan{
+      color: #fff;
+      font-size: 18px;
+    }
+    .langganan h3{
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 8px;
+    }
+    .langganan strong{
+      margin-bottom: 16px;
+    }
+    .langganan .btn{
+      display: block !important;
+      width: 100% !important;
+      height: 56px !important;
+      line-height: 56px !important;
+      border-radius: 2px !important;
+      background-image: linear-gradient(269deg, #dbbc27, #e2a91f) !important;
+      box-shadow: 0 7px 15px 0 #868686 !important;
+      font-weight: bold !important;
+      text-align: center !important;
+      color: #fff;
+      font-size: 18px !important;
+      margin-top: 24px !important;
+    }
+    .langganan .align-center{
+      display: flex;
+      box-align: center;
+      align-items: center;
+      justify-content: center;
+      height: 563px;
+    }
+  </style>
+
+  <section class="langganan" style="margin-top: 48px;">
+    <div class="row">
+      <div class="col col-xs-15 half">
+        <img class="illustration" height="563" src="{{config path="web/secure/base_url"}}media/wysiwyg/frisianflag/illustration.png">
+      </div>
+      <div class="col col-xs-15 half align-center">
+        <div class="wrapper">
+          <div class="content">
+            <h3>Langganan <br>Susu Frisian Flag</h3>
+            <p><strong>Belanja dengan mudah, sampai depan rumah!</strong></p>
+            <p>Ibu tidak akan lagi kehabisan susu untuk anak tersayang dengan adanya program Langganan Susu Frisian Flag. Ibu dapat memilih mengikuti program langganan dalam 3 bulan, 6 bulan, 9 bulan, atau 1 tahun.</p>
+          </div>
+          <a class="btn">MULAI BERLANGGANAN</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="row">
+      <div class="col-xs-15">
+        <a href="https://www.orami.co.id/XXX" title="">
+          <img class="is-desktop" width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/frisianflag/express-shipping.png">
+          <img class="is-mobile" width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/frisianflag/express-shipping-mobile.png">
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<style type="text/css">
+  .artikel-penting .col,
+  .ff-products .col{
+    margin-bottom: 24px;
+  }
+
+  .artikel-penting .col .wrapper,
+  .ff-products .col .wrapper{
+    text-align: center;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(19, 75, 123, 0.1);
+    padding-bottom: 24px;
+  }
+  .ff-products .col .wrapper{
+    background-image: radial-gradient(circle at 50% 50%, #c7e3f6, #f0f9fb);
+  }
+  .artikel-penting .thumb a,
+  .ff-products .thumb a{
+    display: block;
+  }
+  .artikel-penting .content,
+  .ff-products .content{
+    margin: 0 16px 0 16px;
+    height: 79px
+  }
+  .ff-products .content{
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 2px;
+    height: auto;
+  }
+  .artikel-penting h4,
+  .ff-products h4{
+    color: #49bbef;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .artikel-penting p,
+  .ff-products p{
+    font-size: 18px;
+    color: #555555;
+    line-height: 26px;
+  }
+  .artikel-penting a,
+  .ff-products a{
+    color: #555555;
+  }
+  .section-title{
+    margin-top: 48px;
+    margin-bottom: 16px;
+  }
+  .section-title .txt1{
+    font-size:25px;
+    font-weight: bold;
+  }
+  .section-title .separator{
+    position: relative; top: 12px; display: inline-block; width: 4px; height: 43px; border-radius: 100px; background-color: #d8d8d8; margin: 0 24px;
+  }
+  .section-title .txt2{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    text-align: left;
+    color: #7f7f7f;
+  }
+
+  .ff-products .btn{
+    display: inline-block;
+    width: auto !important;
+    height: 48px !important;
+    line-height: 48px !important;
+    border-radius: 4px !important;
+    background-color: #ff8f00 !important;
+    color: #fff;
+    font-size: 20px !important;
+    margin-top: 8px !important;
+    text-transform: none !important;
+  }
+</style>
+
+<section class="artikel-penting">
+  <div class="section-title">
+    <h3><span class="txt1">Artikel Penting</span> <span class="separator"></span> <span class="txt2">Tips dan anjuran agar anak cerdas dan sehat</span></h3>
+  </div>
+
+  <div class="row">
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="http://magazine.orami.co.id/4-fakta-tentang-susu-formula-bayi/"><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/frisianflag/thumb1.jpg"></a></div>
+        <div class="content">
+          <h4>KESEHATAN BAYI</h4>
+          <p><a href="http://magazine.orami.co.id/4-fakta-tentang-susu-formula-bayi/">4 Fakta Tentang Susu Formula Bayi</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="http://magazine.orami.co.id/4-minuman-sehat-untuk-anak/"><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/frisianflag/thumb2.jpg"></a></div>
+        <div class="content">
+          <h4>NUTRISI ANAK</h4>
+          <p><a href="http://magazine.orami.co.id/4-minuman-sehat-untuk-anak/">4 Minuman Sehat untuk Anak</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="http://magazine.orami.co.id/6-nutrisi-penting-untuk-anak-tumbuh-tinggi/"><img width="100%" height="auto" src="{{config path="web/secure/base_url"}}media/wysiwyg/frisianflag/thumb3.jpg"></a></div>
+        <div class="content">
+          <h4>NUTRISI ANAK</h4>
+          <p><a href="http://magazine.orami.co.id/6-nutrisi-penting-untuk-anak-tumbuh-tinggi/">6 Nutrisi Penting Untuk Anak Tumbuh Tinggi</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="ff-products">
+  <div class="section-title">
+    <h3><span class="txt1">Frisian Flag Jelajah</span> <span class="separator"></span> <span class="txt2">Susu pertumbuhan anak 1-3 tahun</span></h3>
+  </div>
+
+  <div class="row">
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="https://www.orami.co.id/frisian-flag-jelajah-123-coklat-400gr-box.html"><img src="https://cdn.orami.co.id/media/filer_public/b7/d9/b7d944a1-56db-4b4e-a3ec-ef249fc7501e/ff-123-cokelat-400g.png"></a></div>
+        <div class="content">
+          <p>Frisian Flag Jelajah 123 Coklat 400gr Box</p>
+          <a class="btn" href="https://www.orami.co.id/frisian-flag-jelajah-123-coklat-400gr-box.html">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="https://www.orami.co.id/frisian-flag-jelajah-123-vanilla-400gr-box.html"><img src="https://cdn.orami.co.id/media/filer_public/7f/74/7f740ada-31e0-4fa4-8ae7-0afa9b65167f/ff-123-vanila-400g.png"></a></div>
+        <div class="content">
+          <p>Frisian Flag Jelajah 123 Vanila 400gr Box</p>
+          <a class="btn" href="https://www.orami.co.id/frisian-flag-jelajah-123-vanilla-400gr-box.html">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="https://www.orami.co.id/frisian-flag-jelajah-123-madu-400gr-box.html"><img src="https://cdn.orami.co.id/media/filer_public/96/35/96357356-3448-43e5-aecf-959ef51fc74e/ff-123-madu-400g.png"></a></div>
+        <div class="content">
+          <p>Frisian Flag Jelajah 123 Madu 400gr Box</p>
+          <a class="btn" href="https://www.orami.co.id/frisian-flag-jelajah-123-madu-400gr-box.html">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ff-products">
+  <div class="section-title">
+    <h3><span class="txt1">Frisian Flag Karya</span> <span class="separator"></span> <span class="txt2">Susu pertumbuhan anak 4-6 tahun</span></h3>
+  </div>
+
+  <div class="row">
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="https://www.orami.co.id/frisian-flag-karya-456-coklat-400gr-box.html"><img src="https://cdn.orami.co.id/media/filer_public/d4/42/d44220f4-fa5c-4b7d-a2c7-ecd2a6c4ba15/ff-456-cokelat-400g.png"></a></div>
+        <div class="content">
+          <p>Frisian Flag Karya 456 Coklat 400gr Box</p>
+          <a class="btn" href="https://www.orami.co.id/frisian-flag-karya-456-coklat-400gr-box.html">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="https://www.orami.co.id/frisian-flag-karya-456-vanilla-400gr-box.html"><img src="https://cdn.orami.co.id/media/filer_public/39/83/398337fe-698f-4d8b-badb-8a364b04b787/ff-456-vanila-400g.png"></a></div>
+        <div class="content">
+          <p>Frisian Flag Karya 456 Vanila 400gr Box</p>
+          <a class="btn" href="https://www.orami.co.id/frisian-flag-karya-456-vanilla-400gr-box.html">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="https://www.orami.co.id/frisian-flag-karya-456-madu-400gr-box.html"><img src="https://cdn.orami.co.id/media/filer_public/e4/53/e453c112-2d0a-4787-972a-6e4b8a27b538/ff-456-madu-400g.png"></a></div>
+        <div class="content">
+          <p>Frisian Flag Karya 456 Madu 400gr Box</p>
+          <a class="btn" href="https://www.orami.co.id/frisian-flag-karya-456-madu-400gr-box.html">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ff-products">
+  <div class="section-title">
+    <h3><span class="txt1">Frisian Flag Mama</span> <span class="separator"></span> <span class="txt2">Susu untuk ibu hamil dan menyusui</span></h3>
+  </div>
+
+  <div class="row">
+    <div class="col col-xs-15 col-md-5">
+      <div class="wrapper">
+        <div class="thumb"><a href="https://www.orami.co.id/frisian-flag-mama-hamil-200gr-box.html"><img src="https://cdn.orami.co.id/media/filer_public/9a/df/9adf6a86-2a7e-4155-8dd2-0e4f0fa6179f/ff-mama-200g.png"></a></div>
+        <div class="content">
+          <p>Frisian Flag Mama Cokelat 200gr Box</p>
+          <a class="btn" href="https://www.orami.co.id/frisian-flag-mama-hamil-200gr-box.html">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
