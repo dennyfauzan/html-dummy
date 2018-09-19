@@ -1,0 +1,105 @@
+<style>
+  .segment-child.border-right-dashed {padding-right: 16px;}
+  .text-left.segment-child{padding-left: 16px;}
+  .border-right-dashed{border-right: 1px dashed #666;}
+  .al-self{align-self: center;}
+  .btm-dashed{border-bottom: 1px dashed #666; height: 48px;}
+  .product-card{border: solid 1px #e7e7e7;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.08);-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.08);box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.08); margin-right: 15px; min-width: 265px!important;}
+  .product-card .product-info{padding: 15px; font-size: 16px;color: #3c3d41 !important;font-weight: 500;}
+  .product-card .product-price {display: block; margin-bottom:15px;}
+  .product-container{justify-content: center;}
+
+  @media screen and (max-width: 767px) {
+    .segment-child{
+      text-align: center!important;
+      padding: 0 0 14px 0!important;
+    }
+    .border-right-dashed{
+      border:none;
+    }
+    .al-self:first-child{margin-bottom: 25px; text-align: center;}
+    .product-container{flex-direction: column;align-items: center;}
+    .product-card{margin-right: 0;}
+  }
+
+</style>
+
+
+<div class="segment-info">
+  <div class="padinner5">
+      <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/27/5b/275bc7b2-7170-4524-83c3-70b5642d8b5c/cooking-class-landing-1368x600.jpg" alt="" width="100%" height="auto" />
+      <img class="visible-xs" src="https://cdn.orami.co.id/media/filer_public/27/5b/275bc7b2-7170-4524-83c3-70b5642d8b5c/cooking-class-landing-1368x600.jpg" alt="" width="100%" height="auto" />
+  </div>
+</div>
+
+<section class="oss-g segment-info">
+  <div class="oss-u-1-1 oss-u-md-1-2 text-right border-right-dashed segment-child">
+      <h5 class="mb-4">HARI & JAM</h5>
+      <p class="text is-md">Sabtu, 13 Oktober 2018, 09.00 - selesai</p>
+      <p class="text is-md">Diharapkan datang tepat waktu dan wajib membawa bukti no. order</p>
+  </div>
+  <div class="oss-u-1-1 oss-u-md-1-2 text-left segment-child">
+    <h5 class="mb-4">LOKASI</h5>
+      <p class="text is-md">Modena Experience, Jl. Suryo No.22, Senopati</p>
+      <p class="text is-md">Jakarta Selatan</p>
+  </div>
+</section>
+
+<section class="oss-g segment-info clearfix margin-vertical mb-24">
+
+  <div class="oss-u-19-24 float-center">
+
+      <div class="oss-g" style="display: none;">
+          <div class="oss-u-1-1 oss-u-md-3-5 al-self">
+              <h3 class="mb-4">Vinna Gracia</h3>
+              <p>
+                  Makeup artist whose best known for her bilingual beauty and fashion channel. She's amassed over 220,000 subscribers as well as 12 million views and growing for her daily vlog and beauty tutorials.
+              </p>
+          </div>
+
+          <div class="oss-u-1-1 oss-u-md-2-5 al-self">
+              <img src="https://cdn.orami.co.id/media/filer_public/0c/5e/0c5eb239-1181-4690-bc22-3b6179085e1e/thumb-mua-360x323.png" alt="Vinna Gracia">
+          </div>
+      </div>
+
+      <div class="oss-u-1-1 btm-dashed mb-48" style="display: none;"></div>
+
+
+
+      <div class="oss-g product-container">
+
+        <div class="product-card oss-u-6-24 mb-16" style="display: none;"> <!--Product Card-->
+          <div class="product-image">
+              <img src="https://cdn.orami.co.id/media/filer_public/39/d7/39d76fb1-f4e1-46bb-8c2d-d298c7d7bd2a/thumb-harga-normal-800x800.jpg" alt="">
+          </div>
+
+          <div class="product-info text-center">
+            <h5 class="product-title">NORMAL PRICE</h5>
+            <div class="product-price widget-price text-center">Rp 350.000</div>
+            <div class="product-cta">
+              <a href="/oramibeautyclass.html" class="oss-button">BELI TIKET SEKARANG</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="product-card oss-u-6-24 mb-16"> <!--Product Card-->
+          <div class="product-image">
+              <img src="https://cdn.orami.co.id/media/filer_public/17/f1/17f14312-b78b-48dd-b61a-7e675ac1d4ec/cooking-class-sku.jpg" alt="">
+          </div>
+
+          <div class="product-info text-center">
+            <!-- <h5 class="product-title">SPECIAL PRICE</h5> -->
+            <!-- <div class="product-price widget-price text-center">Rp 200.000</div> -->
+            <div class="product-cta">
+              <a href="/tiket-orami-cooking-class.html" class="oss-button">BELI TIKET SEKARANG</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </div>
+
+</section>
+
