@@ -20,13 +20,13 @@
             <div class="text-box">
                 <p class="pre-title">Keuntungan</p>
                 <p class="title" style="margin-bottom: 18px;">Apa yang akan kamu dapatkan dari program IbuSibuk?</p>
-                <ol class="description">
-                   <li class="description">Harga lebih murah untuk >300 produk kebutuhan bayi</li>
-                   <li class="description">Untung hingga 30% saat dijual kembali</li>
-                   <li class="description">Memulai bisnis dari rumah tanpa modal</li>
-                   <li class="description">Tidak ada target jualan bulanan</li>
-                   <li class="description">Loyalty Reward (Coming&nbsp;Soon!)</li>
-                </ol>
+                <ul class="description">
+                   <li class="description"><span>1</span>Harga lebih murah untuk >300 produk kebutuhan bayi</li>
+                   <li class="description"><span>2</span>Untung hingga 30% saat dijual kembali</li>
+                   <li class="description"><span>3</span>Memulai bisnis dari rumah tanpa modal</li>
+                   <li class="description"><span>4</span>Tidak ada target jualan bulanan</li>
+                   <li class="description"><span>5</span>Loyalty Reward (Coming&nbsp;Soon!)</li>
+                </ul>
             </div>
         </div>
         <div class="col oss-u-1-1 oss-u-md-1-2 half-right switch">
@@ -113,15 +113,15 @@
 
     <section class="segment-info">
       <div class="container-form">
-
         <div class="tnc-container">
-          <input type="checkbox" name="agreement" id="tnc">
-          <span>Saya meyetujui <a href="#">syarat & ketentuan</a> program IbuSibuk Orami.</span>
+          <form action="/customer/ajax/convert-ibu-sibuk">
+            <input type="checkbox" name="agreement" id="tnc">
+            <span>Saya meyetujui <a href="#">syarat & ketentuan</a> program IbuSibuk Orami.</span>
+            <div class="action">
+                <button class="btn oss-btn">Daftar Sekarang</button>
+            </div>
+          </form>
         </div>
-        <div class="action">
-          <button class="btn oss-btn">Daftar Sekarang</button>
-        </div>
-
       </div>
     </section>
 
@@ -229,6 +229,28 @@
       margin-top: 30px
     }
 
+    li.description{
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 10px;
+    }
+
+    .description span {
+      font-size: 8px;
+      width: 20px;
+      height: 20px;
+      background-color: yellowgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 50%;
+      color: #fff;
+      position: absolute;
+      left: 0px;
+      top: 3px;
+    }
+
     #steps .description .divider {
       height: 4px;
       width: 30%;
@@ -249,6 +271,10 @@
       margin: 0 auto;
       padding: 70px 0;
       max-width: 368px;
+    }
+
+    .container-form .action {
+      width: 100%;
     }
 
     .action .oss-btn {
