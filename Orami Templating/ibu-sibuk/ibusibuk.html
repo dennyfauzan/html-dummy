@@ -1,4 +1,9 @@
 <div class="ibu-sibuk">
+    <div id="container-top">
+      <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/37/da/37da6211-5087-4a45-8ac1-cd67691c14f4/banneribusibuk-desktop.jpg" width="100%">
+      <img class="hidden-md hidden-lg hidden-sm" src="https://cdn.orami.co.id/media/filer_public/8d/b3/8db3d7aa-a8d2-47d9-bba2-e4bc58d5d846/banneribusibuk-mobile.jpg">
+    </div>
+
     <div class="oss-g padinner5 ibu-sibuk--section picture-left">
         <div class="col oss-u-1-1 oss-u-md-1-2 half-left">
             <div class="image-container">
@@ -52,7 +57,8 @@
               <div class="oss-u-1-2 oss-u-md-1-1">
                 <div class="image-container center">
                   <img class="bg-green" src="https://cdn.orami.co.id/media/filer_public/d4/f0/d4f0a534-1c70-42a5-9233-25eb37a8ccce/backgroundbig.png" alt="">
-                  <img class="step-img"src="https://cdn.orami.co.id/media/filer_public/e0/ea/e0ea8ece-b387-4d7a-8c94-4004c183052a/daftaribusibuk.png" alt="">
+                  <img class="step-img hidden-md hidden-lg hidden-sm"src="https://cdn.orami.co.id/media/filer_public/e0/ea/e0ea8ece-b387-4d7a-8c94-4004c183052a/daftaribusibuk.png" alt="">
+                  <img class="step-img hidden-xs desktop" src="https://cdn.orami.co.id/media/filer_public/1f/d4/1fd4dc44-7d1a-49b2-9f0f-b060f86b82ac/daftaribusibuk2x.png" alt="">
                 </div>
               </div>
 
@@ -67,7 +73,8 @@
               <div class="oss-u-1-2 oss-u-md-1-1">
                 <div class="image-container center">
                   <img class="bg-green" src="https://cdn.orami.co.id/media/filer_public/d4/f0/d4f0a534-1c70-42a5-9233-25eb37a8ccce/backgroundbig.png" alt="">
-                  <img class="step-img"src="https://cdn.orami.co.id/media/filer_public/21/91/21918365-a62f-4674-9cea-6705b480ac52/tawarkanproduk.png" alt="">
+                  <img class="step-img hidden-md hidden-lg hidden-sm"src="https://cdn.orami.co.id/media/filer_public/21/91/21918365-a62f-4674-9cea-6705b480ac52/tawarkanproduk.png" alt="">
+                  <img class="step-img hidden-xs desktop" src="https://cdn.orami.co.id/media/filer_public/5a/65/5a65c9b2-3487-48f1-b578-5c23eed116cc/tawarkanproduk2x.png" alt="">
                 </div>
               </div>
 
@@ -82,7 +89,8 @@
                 <div class="oss-u-1-2 oss-u-md-1-1">
                   <div class="image-container center">
                     <img class="bg-green" src="https://cdn.orami.co.id/media/filer_public/d4/f0/d4f0a534-1c70-42a5-9233-25eb37a8ccce/backgroundbig.png" alt="">
-                    <img class="step-img" src="https://cdn.orami.co.id/media/filer_public/6a/7c/6a7c1252-dda9-4ab0-81ac-e0600d92a331/kirimlangsungkerumah.png" alt="">
+                    <img class="step-img hidden-md hidden-lg hidden-sm" src="https://cdn.orami.co.id/media/filer_public/6a/7c/6a7c1252-dda9-4ab0-81ac-e0600d92a331/kirimlangsungkerumah.png" alt="">
+                    <img class="step-img hidden-xs desktop" src="https://cdn.orami.co.id/media/filer_public/c4/59/c45994e9-e42d-40f7-95ea-54acf67fb267/kirimlangsungkerumah2x.png" alt="">
                   </div>
                 </div>
 
@@ -97,7 +105,8 @@
                   <div class="oss-u-1-2 oss-u-md-1-1">
                     <div class="image-container center">
                       <img class="bg-green" src="https://cdn.orami.co.id/media/filer_public/d4/f0/d4f0a534-1c70-42a5-9233-25eb37a8ccce/backgroundbig.png" alt="">
-                      <img class="step-img" src="https://cdn.orami.co.id/media/filer_public/0e/10/0e10b435-d984-4cb8-869b-9ac37e395585/banyakhadiah.png" alt="">
+                      <img class="step-img hidden-md hidden-lg hidden-sm" src="https://cdn.orami.co.id/media/filer_public/0e/10/0e10b435-d984-4cb8-869b-9ac37e395585/banyakhadiah.png" alt="">
+                      <img class="step-img hidden-xs desktop" src="https://cdn.orami.co.id/media/filer_public/c3/df/c3df1879-83b6-4418-87aa-0fd84861571b/banyakhadiah2x.png" alt="">
                     </div>
                   </div>
 
@@ -114,11 +123,14 @@
     <section class="segment-info">
       <div class="container-form">
         <div class="tnc-container">
-          <form action="/customer/ajax/convert-ibu-sibuk">
+          <form action="/customer/ajax/convert-ibu-sibuk" method="POST">
             <input type="checkbox" name="agreement" id="tnc">
             <span>Saya meyetujui <a href="#">syarat & ketentuan</a> program IbuSibuk Orami.</span>
+            <div class="response-message hide">
+              <span></span>
+            </div>
             <div class="action">
-                <button class="btn oss-btn">Daftar Sekarang</button>
+                <button class="btn oss-btn" disabled>Daftar Sekarang</button>
             </div>
           </form>
         </div>
@@ -210,7 +222,7 @@
         margin-bottom: 48px;
     }
 
-    #steps {
+    #steps , #container-top {
       background-color: #FAFAFA;
       width: 100vw;
       position: relative;
@@ -220,6 +232,11 @@
       margin-right: -50vw;
       padding-left: 15px;
       padding-right: 15px;
+    }
+
+    #container-top {
+      padding: 0;
+      margin-bottom: 30px;
     }
 
     #steps .description {
@@ -260,6 +277,7 @@
       position: absolute;
       left: 35%;
       top: 0;
+      border-radius: 4px;
     }
 
     /* Form Section */
@@ -287,6 +305,11 @@
       padding: 6.24px;
     }
 
+    .action .oss-btn:disabled {
+      cursor: no-drop;
+      background-color: #999999;
+    }
+
     .tnc-container span {
       font-size: 16px;
     }
@@ -297,6 +320,19 @@
     }
 
     /* End Form Section */
+
+    /* Response Message */
+    .response-message {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      background-color: rgba(255, 248, 198, 0.4);
+    }
+    .response-message span {
+      font-size: 12px;
+      color: red;
+    }
+    /* End Response Message */
 
     @media(max-width: 600px) {
       .ibu-sibuk .description.responsive {
@@ -379,8 +415,44 @@
         padding: 15px 20px 0;
       }
 
+      .step-img.desktop {
+        padding: 46px;
+      }
+
       .container-form{
         padding: 100px 0;
       }
     }
   </style>
+
+  <script>
+    const actionBtn = $('.action .btn');
+    $('#tnc').on('click', function(e) {
+      if (this.checked == true) {
+        actionBtn.removeAttr("disabled")
+      } else {
+        actionBtn.attr("disabled", true);
+      }
+    })
+
+    actionBtn.on('click', function(e) {
+      e.preventDefault();
+      console.log('post sent');
+      $.post('https://www.orami.co.id/customer/ajax/convert-ibu-sibuk',
+      {},
+      function(data, status) {
+        const objResponse = JSON.parse(data);
+        console.log('data:'+ data, 'status: '+ status);
+        if(objResponse.message.includes('login')) {
+          window.location.href = "https://www.orami.co.id/login";
+        } else {
+          const messageContainer = $('.response-message');
+          const message = $('.response-message span');
+          message.text(objResponse.message);
+          messageContainer.removeClass('hide');
+          console.log('asda');
+        }
+      }
+      )
+    });
+  </script>
