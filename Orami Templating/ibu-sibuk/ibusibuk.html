@@ -26,7 +26,7 @@
                 <p class="pre-title">Keuntungan</p>
                 <p class="title" style="margin-bottom: 18px;">Apa yang akan kamu dapatkan dari program IbuSibuk?</p>
                 <ul class="description">
-                   <li class="description"><span>1</span>Harga lebih murah untuk >300 produk kebutuhan bayi</li>
+                   <li class="description"><span>1</span>Harga lebih murah untuk > 300 produk kebutuhan bayi</li>
                    <li class="description"><span>2</span>Untung hingga 30% saat dijual kembali</li>
                    <li class="description"><span>3</span>Memulai bisnis dari rumah tanpa modal</li>
                    <li class="description"><span>4</span>Tidak ada target jualan bulanan</li>
@@ -140,289 +140,338 @@
   </div>
 
   <style>
-    .ibu-sibuk .title {
-      color: #999999;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 32px;
-      text-align: left;
-      margin-bottom: 10px;
-    }
-    .ibu-sibuk .description {
-      color: #999999;
-      font-weight: 400;
-      letter-spacing: 0.5px;
-      line-height: 24px;
-      text-align: left;
-    }
-
-    .ibu-sibuk .pre-title {
-        color: #96CC29;
-        font-size: 12px !important;
+      .ibu-sibuk .title {
+        color: #999999;
+        font-size: 20px;
         font-weight: 700;
-        letter-spacing: 3px;
-        line-height: 14px;
+        line-height: 32px !important;
         text-align: left;
-        text-transform: uppercase;
-        margin-bottom: 2px;
-    }
-
-    .ibu-sibuk .ibu-sibuk--section.picture-left .half-left,
-    .ibu-sibuk .ibu-sibuk--section.picture-right .half-right {
-        background-image: url('https://cdn.orami.co.id/media/filer_public/15/e2/15e26cfb-14de-4d79-89da-916f9f2a3f88/backgroundsmall.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-
-    .image-container.center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 260px;
-      position: relative;
-    }
-
-    /* Animation */
-    .col-container .image-container {
-      transition: transform 0.4s ease;
-    }
-
-    .col-container .image-container:hover .bg-green {
-      transition: transform 0.4s ease;
-      transform: rotate(-12deg);
-    }
-
-    .col-container .image-container:hover .step-img {
-      transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      transform: scale(1.1);
-    }
-
-    .bg-green {
-      position: relative;
-      width: 100%;
-      transition: transform 0.4s ease;
-    }
-
-    .step-img {
-      align-content: center;
-      position: absolute;
-      margin: auto;
-      z-index: 1;
-      transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    /* END Animation */
-    .ibu-sibuk .ibu-sibuk--section .image-container {
-        text-align: center;
-        padding-top: 48px;
-    }
-
-    .ibu-sibuk .ibu-sibuk--section {
-        margin-bottom: 48px;
-    }
-
-    #steps , #container-top {
-      background-color: #FAFAFA;
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    #container-top {
-      padding: 0;
-      margin-bottom: 30px;
-    }
-
-    #steps .description {
-      text-align: center;
-      padding: 15px 0;
-      position: relative;
-      margin-top: 30px
-    }
-
-    li.description{
-      position: relative;
-      padding-left: 30px;
-      margin-bottom: 10px;
-    }
-
-    .description span {
-      font-size: 8px;
-      width: 20px;
-      height: 20px;
-      background-color: yellowgreen;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      border-radius: 50%;
-      color: #fff;
-      position: absolute;
-      left: 0px;
-      top: 3px;
-    }
-
-    #steps .description .divider {
-      height: 4px;
-      width: 30%;
-      margin: auto;
-      display: inline-block;
-      background-color: #CCFF66;
-      position: absolute;
-      left: 35%;
-      top: 0;
-      border-radius: 4px;
-    }
-
-    /* Form Section */
-    .container-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      padding: 70px 0;
-      max-width: 368px;
-    }
-
-    .container-form .action {
-      width: 100%;
-    }
-
-    .action .oss-btn {
-      color: #fff;
-      margin-top: 30px;
-      width: 100%;
-      height: auto!important;
-      border: none;
-      background-color: #ff6c6c;
-      padding: 6.24px;
-    }
-
-    .action .oss-btn:disabled {
-      cursor: no-drop;
-      background-color: #999999;
-    }
-
-    .tnc-container span {
-      font-size: 16px;
-    }
-    #tnc {
-      height: 15px;
-      width: 15px;
-      margin-top: 3px;
-    }
-
-    /* End Form Section */
-
-    /* Response Message */
-    .response-message {
-      margin-top: 20px;
-      padding: 10px 20px;
-      border-radius: 4px;
-      background-color: rgba(255, 248, 198, 0.4);
-    }
-    .response-message span {
-      font-size: 12px;
-      color: red;
-    }
-    /* End Response Message */
-
-    @media(max-width: 600px) {
-      .ibu-sibuk .description.responsive {
-        width: 50%;
-      }
-      .ibu-sibuk--section .switch {
-        order: -1;
-      }
-      .action .oss-btn {
-        padding: 5px!important;
+        margin-bottom: 10px;
       }
       .ibu-sibuk .description {
-        font-size: 14px !important;
-      }
-      .ibu-sibuk .title {
-        font-size: 20px!important;
-      }
-      .text-box {
-        margin-top: 20px;
-      }
-      #steps .description {
-        text-align: left;
-        margin-top: 70px;
-        padding-left: 12px;
-      }
-      #steps .description .divider {
-        left: 12px;
-      }
-      .col-container {
-        margin-top: -30px;
-      }
-      .col-container .oss-g {
-        max-height: 210px;
-      }
-
-    }
-
-    @media (min-width: 768px) {
-      .ibu-sibuk {
-        font-family: 'Roboto';
-      }
-      .ibu-sibuk .title {
-        font-size: 32px;
-        width: 562px;
-        margin-bottom: 10px;
-        line-height: 48px;
+        color: #999999;
+        font-weight: 400;
         letter-spacing: 0.5px;
+        line-height: 24px;
+        text-align: left;
       }
 
       .ibu-sibuk .pre-title {
-        margin-bottom: 16px;
-      }
-
-      .ibu-sibuk .description {
-        width: 560px;
-        font-size: 16px;
+          color: #96CC29;
+          font-size: 12px !important;
+          font-weight: 700;
+          letter-spacing: 3px;
+          line-height: 14px;
+          text-align: left;
+          text-transform: uppercase;
+          margin-bottom: 2px;
       }
 
       .ibu-sibuk .ibu-sibuk--section.picture-left .half-left,
       .ibu-sibuk .ibu-sibuk--section.picture-right .half-right {
-          background-image: url('https://cdn.orami.co.id/media/filer_public/95/25/952540d6-b830-43a2-a93e-3fbc2ecc87fe/backgroundbig2x.png');
+          background-image: url('https://cdn.orami.co.id/media/filer_public/15/e2/15e26cfb-14de-4d79-89da-916f9f2a3f88/backgroundsmall.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
       }
 
-      .col-container .col {
+      .image-container.center {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        min-height: 260px;
+        position: relative;
+      }
+
+      /* Animation */
+      .col-container .image-container {
+        -webkit-transition: -webkit-transform 0.4s ease;
+        transition: -webkit-transform 0.4s ease;
+        -o-transition: transform 0.4s ease;
+        transition: transform 0.4s ease;
+        transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+      }
+
+      .col-container .image-container:hover .bg-green {
+        -webkit-transition: -webkit-transform 0.4s ease;
+        transition: -webkit-transform 0.4s ease;
+        -o-transition: transform 0.4s ease;
+        transition: transform 0.4s ease;
+        transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+        -webkit-transform: rotate(-12deg);
+            -ms-transform: rotate(-12deg);
+                transform: rotate(-12deg);
+      }
+
+      .col-container .image-container:hover .step-img {
+        -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+      }
+
+      .bg-green {
+        position: relative;
+        width: 100%;
+        -webkit-transition: -webkit-transform 0.4s ease;
+        transition: -webkit-transform 0.4s ease;
+        -o-transition: transform 0.4s ease;
+        transition: transform 0.4s ease;
+        transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+      }
+
+      .step-img {
+        -ms-flex-line-pack: center;
+            align-content: center;
+        position: absolute;
+        margin: auto;
+        z-index: 1;
+        -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      /* END Animation */
+      .ibu-sibuk .ibu-sibuk--section .image-container {
+          text-align: center;
+          padding-top: 48px;
+      }
+
+      .ibu-sibuk .ibu-sibuk--section {
+          margin-bottom: 48px;
+      }
+
+      #steps , #container-top {
+        background-color: #FAFAFA;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding-left: 15px;
         padding-right: 15px;
       }
 
-      #steps .steps-wrapper {
-        max-width: 1216px;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 25px 15px;
-      }
-
-      #steps .text-box {
-        margin-bottom: 60px;
+      #container-top {
+        padding: 0;
+        margin-bottom: 30px;
       }
 
       #steps .description {
-        padding: 15px 20px 0;
+        text-align: center;
+        padding: 15px 0;
+        position: relative;
+        margin-top: 30px
       }
 
-      .step-img.desktop {
-        padding: 46px;
+      li.description{
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
       }
 
-      .container-form{
-        padding: 100px 0;
+      .description span {
+        font-size: 8px;
+        width: 20px;
+        height: 20px;
+        background-color: yellowgreen;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+        position: absolute;
+        left: 0px;
+        top: 3px;
       }
-    }
+
+      #steps .description .divider {
+        height: 4px;
+        width: 30%;
+        margin: auto;
+        display: inline-block;
+        background-color: #CCFF66;
+        position: absolute;
+        left: 35%;
+        top: 0;
+        border-radius: 4px;
+      }
+
+      /* Form Section */
+      .container-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 0 auto;
+        padding: 70px 0;
+        max-width: 368px;
+      }
+
+      .container-form .action {
+        width: 100%;
+      }
+
+      .action .oss-btn {
+        color: #fff;
+        margin-top: 30px;
+        width: 100%;
+        height: auto!important;
+        border: none;
+        background-color: #ff6c6c;
+        padding: 6.24px;
+      }
+
+      .action .oss-btn:disabled {
+        cursor: no-drop;
+        background-color: #999999;
+      }
+
+      .tnc-container span {
+        font-size: 16px;
+      }
+      #tnc {
+        height: 15px;
+        width: 15px;
+        margin-top: 3px;
+      }
+
+      /* End Form Section */
+
+      /* Response Message */
+      .response-message {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: rgba(255, 248, 198, 0.4);
+      }
+      .response-message span {
+        font-size: 12px;
+        color: red;
+      }
+      /* End Response Message */
+
+      @media(max-width: 600px) {
+        .ibu-sibuk .description.responsive {
+          width: 50%;
+        }
+        .ibu-sibuk--section .switch {
+          -webkit-box-ordinal-group: 0;
+              -ms-flex-order: -1;
+                  order: -1;
+        }
+        .action .oss-btn {
+          padding: 5px!important;
+        }
+        .ibu-sibuk .description {
+          font-size: 14px !important;
+        }
+        .ibu-sibuk .title {
+          font-size: 20px!important;
+        }
+        .text-box {
+          margin-top: 20px;
+        }
+        #steps .description {
+          text-align: left;
+          margin-top: 70px;
+          padding-left: 12px;
+        }
+        #steps .description .divider {
+          left: 12px;
+        }
+        .col-container {
+          margin-top: -30px;
+        }
+        .col-container .oss-g {
+          max-height: 210px;
+        }
+
+      }
+
+      @media (min-width: 768px) {
+        .ibu-sibuk {
+          font-family: 'Roboto';
+        }
+        .ibu-sibuk .title {
+          font-size: 32px;
+          width: 562px;
+          margin-bottom: 10px;
+          line-height: 48px!important;
+          letter-spacing: 0.5px;
+        }
+
+        .ibu-sibuk .pre-title {
+          margin-bottom: 16px;
+        }
+
+        .ibu-sibuk .description {
+          width: 560px;
+          font-size: 16px;
+        }
+
+        .ibu-sibuk .ibu-sibuk--section.picture-left .half-left,
+        .ibu-sibuk .ibu-sibuk--section.picture-right .half-right {
+            background-image: url('https://cdn.orami.co.id/media/filer_public/95/25/952540d6-b830-43a2-a93e-3fbc2ecc87fe/backgroundbig2x.png');
+        }
+
+        .col-container .col {
+          padding-right: 15px;
+          max-width: 24.5%;
+        }
+
+        #steps .steps-wrapper {
+          max-width: 1216px;
+          margin-right: auto;
+          margin-left: auto;
+          padding: 25px 15px;
+        }
+
+        #steps .text-box {
+          margin-bottom: 60px;
+        }
+
+        #steps .description {
+          padding: 15px 20px 0;
+        }
+
+        .step-img.desktop {
+          padding: 46px;
+        }
+
+        .container-form{
+          padding: 100px 0;
+        }
+      }
   </style>
 
   <script>
@@ -443,7 +492,10 @@
       function(data, status) {
         const objResponse = JSON.parse(data);
         console.log('data:'+ data, 'status: '+ status);
-        if(objResponse.message.includes('login')) {
+        if(objResponse.status){
+          window.location.href = "https://www.orami.co.id/cp/katalogibusibuk";
+        }
+        else if(objResponse.message.includes('login')) {
           window.location.href = "https://www.orami.co.id/login";
         } else {
           const messageContainer = $('.response-message');
