@@ -122,22 +122,88 @@
 
     <section class="segment-info">
       <div class="container-form">
-        <div class="tnc-container">
-          <form action="/customer/ajax/convert-ibu-sibuk" method="POST">
-            <input type="checkbox" name="agreement" id="tnc">
-            <span>Saya meyetujui <a href="#">syarat & ketentuan</a> program IbuSibuk Orami.</span>
-            <div class="response-message hide">
-              <span></span>
-            </div>
-            <div class="action">
-                <button class="btn oss-btn" disabled>Daftar Sekarang</button>
-            </div>
-          </form>
+        <!-- <input type="checkbox" name="agreement" id="tnc">
+        <span>Saya meyetujui <a href="#">syarat & ketentuan</a> program IbuSibuk Orami.</span> -->
+        <div class="response-message hide">
+          <span></span>
+        </div>
+        <div class="action">
+            <button class="btn oss-btn">Daftar Sekarang</button>
         </div>
       </div>
     </section>
 
   </div>
+
+  <div class="modal-control hide">
+      <div class="shadow-modal"></div>
+      <div class="c-modal">
+        <p>Saya telah menyetujui syarat dan ketentuan program IbuSibuk Orami yang berlaku, termasuk ketentuan di bawah:</p>
+        <ol>
+          <li>Dengan bergabung di program Ibu Sibuk maka fasilitas Orami Credit dan voucher tidak dapat digunakan.</li>
+          <li>Pengiriman pesanan IbuSibuk hanya tersedia di kota <strong>Jabodetabek</strong>. Pengiriman ke kabupaten atau area diluar kota Jabodetabek akan dibatalkan otomatis dan dana dikembalikan ke akun.</li>
+        </ol>
+        <p>Akun saya akan diproses menjadi akun IbuSibuk.</p>
+        <div class="action-modal">
+          <button class="cancel">Batal</button>
+          <button class="agree">Setuju</button>
+        </div>
+      </div>
+  </div>
+
+
+
+  <style>
+    .shadow-modal {
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      z-index: 98;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all .3s ease;
+    }
+
+    .c-modal {
+      position: fixed;
+      width: 40%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #FAFAFA;
+      min-height: 40%;
+      z-index: 99;
+      border-radius: 5px;
+      padding: 20px;
+      height: auto;
+      transition: all .3s ease;
+    }
+    .c-modal p {
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+    .action-modal{
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: no-wrap;
+    }
+    .action-modal button {
+      border-radius: 4px;
+      font-weight: 700;
+      border: none;
+    }
+    .action-modal .cancel {
+      background-color: #b7b5b5;
+      color: #FFF;
+      margin-right: 20px;
+    }
+    .action-modal .agree {
+      color: #FFF;
+    }
+  </style>
 
   <style>
       .ibu-sibuk .title {
@@ -476,14 +542,56 @@
 
   <script>
     const actionBtn = $('.action .btn');
-    $('#tnc').on('click', function(e) {
+    const CTA = $(".action-modal .agree");
+
+    // toggle checkbox disable button
+    /*$('#tnc').on('click', function(e) {
       if (this.checked == true) {
         actionBtn.removeAttr("disabled")
       } else {
         actionBtn.attr("disabled", true);
       }
-    })
+    }) */
 
+    // toggle btn modal
+    actionBtn.on('click', function(e) {
+      e.preventDefault();
+      $(".modal-control").removeClass("hide");
+    });
+
+    // toggle closed modal
+    $(".modal-control .shadow-modal, .modal-control .cancel").on('click', function() {
+      $(".modal-control").addClass('hide');
+    });
+
+    // CTA Request
+    CTA.on('click', function(e) {
+      e.preventDefault();
+      console.log('post sent');
+      $.post('https://www.orami.co.id/customer/ajax/convert-ibu-sibuk',
+      {},
+      function(data, status) {
+        const objResponse = JSON.parse(data);
+        console.log('data:'+ data, 'status: '+ status);
+        if(objResponse.status){
+          window.location.href = "https://www.orami.co.id/cp/katalogibusibuk";
+        }
+        else if(objResponse.message.includes('login')) {
+          window.location.href = "https://www.orami.co.id/login";
+        } else {
+          const messageContainer = $('.response-message');
+          const message = $('.response-message span');
+          message.text(objResponse.message);
+          messageContainer.removeClass('hide');
+          $(".modal-control").addClass('hide');
+          console.log('asda');
+        }
+      }
+      )
+    });
+
+
+    /*
     actionBtn.on('click', function(e) {
       e.preventDefault();
       console.log('post sent');
@@ -506,5 +614,5 @@
         }
       }
       )
-    });
+    }); */
   </script>
