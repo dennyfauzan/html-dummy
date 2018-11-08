@@ -138,7 +138,7 @@
   <div class="modal-control hide">
       <div class="shadow-modal"></div>
       <div class="c-modal">
-        <p>Saya telah menyetujui syarat dan ketentuan program IbuSibuk Orami yang berlaku, termasuk ketentuan di bawah:</p>
+        <p>Saya telah menyetujui <a href="https://www.orami.co.id/faq">syarat dan ketentuan</a> program IbuSibuk Orami yang berlaku, termasuk ketentuan di bawah:</p>
         <ol>
           <li>Dengan bergabung di program Ibu Sibuk maka fasilitas Orami Credit dan voucher tidak dapat digunakan.</li>
           <li>Pengiriman pesanan IbuSibuk hanya tersedia di kota <strong>Jabodetabek</strong>. Pengiriman ke kabupaten atau area diluar kota Jabodetabek akan dibatalkan otomatis dan dana dikembalikan ke akun.</li>
@@ -202,6 +202,18 @@
     }
     .action-modal .agree {
       color: #FFF;
+    }
+
+    @media(max-width: 600px) {
+      .c-modal {
+        width: 90%;
+      }
+      .c-modal p, .c-modal ol li {
+        font-size: 13px !important;
+      }
+      .action-modal .agree {
+        background-color: #ff6c6c;
+      }
     }
   </style>
 
