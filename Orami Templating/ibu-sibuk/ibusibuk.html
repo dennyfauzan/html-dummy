@@ -556,14 +556,31 @@
     const actionBtn = $('.action .btn');
     const CTA = $(".action-modal .agree");
 
-    // toggle checkbox disable button
-    /*$('#tnc').on('click', function(e) {
-      if (this.checked == true) {
-        actionBtn.removeAttr("disabled")
-      } else {
-        actionBtn.attr("disabled", true);
+    // post user category form login form
+    const isLogged = document.referrer.includes('ibusibuk=login');
+    if(isLogged) {
+      console.log('works to redirect');
+      $.post('https://www.orami.co.id/customer/ajax/convert-ibu-sibuk',
+      {},
+      function(data, status) {
+        const objResponse = JSON.parse(data);
+        console.log('data:'+ data, 'status: '+ status);
+        if(objResponse.status){
+          window.location.href = "https://www.orami.co.id/cp/katalogibusibuk";
+        } else {
+          const messageContainer = $('.response-message');
+          const message = $('.response-message span');
+          message.text(objResponse.message);
+          messageContainer.removeClass('hide');
+          $(".modal-control").addClass('hide');
+          $('html, body').animate({
+            scrollTop: $('.container-form').offset().top
+          }, 1000);
+          console.log('asda');
+        }
       }
-    }) */
+      )
+    }
 
     // toggle btn modal
     actionBtn.on('click', function(e) {
@@ -589,7 +606,7 @@
           window.location.href = "https://www.orami.co.id/cp/katalogibusibuk";
         }
         else if(objResponse.message.includes('login')) {
-          window.location.href = "https://www.orami.co.id/login";
+          window.location.href = "https://www.orami.co.id/login?ibusibuk=login";
         } else {
           const messageContainer = $('.response-message');
           const message = $('.response-message span');
