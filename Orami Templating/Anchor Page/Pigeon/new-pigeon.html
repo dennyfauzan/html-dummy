@@ -1,0 +1,145 @@
+<style>
+    .ap-carousel{width: 100%; height: 100%;}
+    .carousel-cell{
+      width: 100%;
+      height: 325px;
+    }
+    /* .ap-carousel .flickity-prev-next-button {display: none;} */
+    .flickity-page-dots{bottom:-60px;}
+    .flickity-page-dots .dot{
+      width: 12px!important;
+      height: 12px!important;
+      margin: 0 15px 0 -5px!important;
+      font-size: 30px!important;
+    }
+    .flickity-page-dots .dot.is-selected{background-color: #42a9f3;}
+    .flickity-prev-next-button{padding: 0;}
+    .flickity-prev-next-button .arrow{fill:#ff6c6c;}
+      @media (max-width: 768px){
+        .carousel-cell{
+          height: 100px;
+        }
+        .flickity-page-dots {
+          bottom: -45px;
+        }
+        .flickity-prev-next-button{display: none;}
+      }
+  </style>
+
+<div class="box-campaign padinner5">
+  <img class="hidden-xs" src="https://cdn.orami.co.id/media/filer_public/18/29/182909b5-847e-4dbe-847e-2f19ae9f94d2/banner-0-pigeon.jpg" alt="" width="100%" height="auto">
+  <img class="visible-xs" src="https://cdn.orami.co.id/media/filer_public/18/29/182909b5-847e-4dbe-847e-2f19ae9f94d2/banner-0-pigeon.jpg" alt="" width="100%" height="auto">
+</div>
+
+<div class="segment-info mb-24">
+  <div class="oss-g">
+      <div class="ap-carousel">
+        <div class="carousel-cell">
+            <img src="https://cdn.orami.co.id/media/filer_public/5a/fd/5afdd50e-bc04-4d78-924b-83c3a819f119/2018_pigeon_marketplace_-_orami_web_promo_banner_2432x670pixel_final_021118_1.jpg" width="100%">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://cdn.orami.co.id/media/filer_public/a7/a4/a7a4b345-3a46-4110-9eba-9ae4549e95de/pigeon-brandbanner2-2432x608.jpg" width="100%">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://cdn.orami.co.id/media/filer_public/b5/c4/b5c457e9-2471-4dfe-9adf-e0db3ce8a6cf/pigeon-banner2-2432x670.jpg" width="100%">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://cdn.orami.co.id/media/filer_public/1f/77/1f77c278-ad19-4796-b347-9d4009d82023/pigeon-banner4-2432x670.jpg" width="100%">
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="segment-info">
+  <div class="oss-g">
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-left mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/pigeon-mother-care">
+          <img src="https://cdn.orami.co.id/media/filer_public/62/9f/629fd379-d40a-4b8c-9f8a-e17e82ce39e3/2018_pigeon_marketplace_-_orami_web_product_category_banner_1192x608pixel_final_021118_2.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-right mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/pigeon-baby-wipes">
+          <img src="https://cdn.orami.co.id/media/filer_public/a8/9d/a89d78f7-564e-4272-a346-b2d70cecda4b/2018_pigeon_marketplace_-_orami_web_product_category_banner_1192x608pixel_final_021118_1.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-left mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/pigeon-cleaning-sterilizing">
+          <img src="https://cdn.orami.co.id/media/filer_public/7c/09/7c090990-4300-4b47-9a6a-c124f349804e/2018_pigeon_marketplace_-_orami_web_product_category_banner_1192x608pixel_final_021118_3.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="oss-u-1-1 oss-u-md-1-2 col half-right mb-16">
+      <div class="box-campaign padinner5">
+        <a href="/bp/pigeon-toiletries-skincare">
+          <img src="https://cdn.orami.co.id/media/filer_public/df/cd/dfcdc868-0f1c-4cb5-8ea5-87ea7af78bf3/2018_pigeon_marketplace_-_orami_web_product_category_banner_1192x608pixel_final_021118_4.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="segment-info">
+  <div class="row-title text-center" style="margin-bottom:0;">
+    <div class="title">
+      <strong>Produk Rekomendasi</strong>
+    </div>
+    <div class="line"></div>
+  </div>
+</div>
+<div class="product-list clearfix mb-32">
+  <div class="wrap-list-product">
+      {{block type="catalog/product_list" name="home.catalog.product.list" alias="products_cms" category_id="17925" template="catalog/product/list.phtml"}}
+  </div>
+</div>
+<div class="segment-info text-center" style="padding: 40px 0;">
+    <a class="oss-button btn-block" href="/bp/pigeon">Lihat Semua Produk</a>
+</div>
+
+  <style>
+    .c-selengkapnya {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #FF6C6C;
+      position: relative;
+    }
+    .selengkapnya {
+      font-size: 22px;
+      font-weight: bold;
+      color: #f7f7f7;
+      margin-bottom: 20px;
+      letter-spacing: .8px;
+    }
+    .btn-see-more {
+      margin: 0 auto;
+      background-color: #f7f7f7;
+      border-radius: 2px;
+      color: #FF6C6C;
+      font-size: 12px;
+      box-shadow: 0 2px 2px 0 rgba(228, 57, 57, 0.14), 0 3px 1px -2px rgba(162, 9, 9, 0.12), 0 1px 5px 0 rgba(115, 1, 1, 0.2);
+      font-weight: 700;
+      padding: 10px 14px;
+      text-align: center;
+      position: absolute;
+      bottom: 10%;
+    }
+
+    .row-title .title {
+      background-color: #fff;
+    }
+  </style>
+
+
+<script>
+    $('.ap-carousel').flickity({
+      cellAlign: 'left',
+      contain: true
+    });
+    $('a[href$="https://www.orami.co.id/#"]').removeAttr('href');
+</script>
